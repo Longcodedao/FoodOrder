@@ -1,0 +1,30 @@
+.container {
+  max-width: 1440px;
+}
+
+.login-container {
+  max-width: 500px;
+  padding: 106px;
+  background-color: red;
+}
+
+form {
+  width: 500px;
+  height: 700px;
+  margin-top: 100px;
+  margin-left: 106px;
+  margin-bottom: 130px;
+  background-color: rgba(255, 255, 255, 0.582);
+  border-radius: 50px;
+  border: 3px solid rgba(224, 142, 142, 0.582);
+  padding: 40px;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #e5c9df;
+  padding: 30px;
+}
+.logo {
+  margin: auto;
+  display: block;
+}
