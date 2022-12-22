@@ -11,6 +11,8 @@
 form {
   width: 500px;
   height: 700px;
+  left: 55vw;
+  top: 15vh;
   margin-top: 100px;
   margin-left: 106px;
   margin-bottom: 130px;
@@ -27,4 +29,37 @@ body {
 .logo {
   margin: auto;
   display: block;
+}
+button {
+  padding: 14px 20px;
+  border-radius: 50px;
+  margin: 7px 0;
+  width: 100%;
+  font-size: 18px;
+}
+.box-break {
+  margin: auto;
+  padding: auto;
+}
+
+.create-button {
+  background-color: #dc3c70;
+  color: white;
+  font-size: 18px;
+}
+
+.logo {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  left: 35vw;
+  top: 30vh;
+}
+
+.background-page {
+  position: absolute;
+  margin: 0px;
+  right: 40vw;
+  top: 0vh;
+  right: 0vw;
 }
