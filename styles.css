@@ -13,4 +13,5 @@
 form {
   border: 3px;
   border-color: red;
+  border-radius: 10px;
 }
