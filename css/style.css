@@ -1,40 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #e5c9df;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  max-width: 1440px;
+#sweetpie{
+  height: 100vh;
+  width: 45vw;
 }
 
-.login-container {
-  max-width: 500px;
-  padding: 106px;
-  background-color: red;
+#logo {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  left: 36vw;
+  top: 30vh;
 }
 
+.background-header {
+  color: white;
+  position: absolute;
+  top: 85vh;
 
-form {
-  border: 3px;
-  border-color: red;
+  margin-left: 50px;
+}
+
+.background-header h1 {
+  font-size: 40px;
 }
 
 /* Login-Menu decoration */
 #login-menu {
   position: absolute;
-  width: 36vw;
+  width: 30vw;
   height: 724px;
-  left: 55vw;
-  top: 15vh;
+  left: 60vw;
+  top: 18vh;
 
 
   box-sizing: border-box;
   background: #FBFAFA;
   border: 3px solid #846060;
   border-radius: 50px;
-  padding: 30px;
+  padding: 40px;
 
 }
 
@@ -92,14 +105,29 @@ form {
 
 
 .confirm {
+  margin-top: 15px;
   padding: 20px 36px;
   width: 100%;
   border-radius: 50px;
   background-color:  #DC3C70;
   color: white;
   font-size: 20px;
+  font-weight: bold;
+  border: none;
 }
 
 
+#signup {
+  margin-top: 30px;
+  text-align: center;
+}
 
+#signup a{
+  text-decoration: none;
+  color: black;
+}
 
+#signup a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
