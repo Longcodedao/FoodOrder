@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Poppins:wght@600&display=swap");
+
+body {
+  font-family: "Poppins";
+}
+
+.heading {
+  font-size: 50px;
+  color: #a5516f;
+}
+.top-nav {
+  background-color: pink;
+  overflow: hidden;
+}
+
+#my-form {
+  display: flex;
+  flex-direction: row;
+}
+
+#my-form input,
+#my-form button {
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 2px;
+}
+#my-form input {
+  flex-grow: 2;
+  border-right-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#my-form button {
+  background: white;
+  color: grey;
+  border-left-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
