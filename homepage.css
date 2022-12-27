@@ -9,7 +9,7 @@ body {
   font-size: 50px;
   color: #a5516f;
   float: left;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
 }
 .top-nav {
   overflow: hidden;
@@ -57,5 +57,41 @@ body {
 }
 
 .intro {
-  padding-left: 10rem;
+  padding-left: 9rem;
+}
+#delivery-location {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  max-width: 100%;
+}
+
+#delivery-location input {
+  flex-grow: 2;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+  width: 30px;
+}
+
+#delivery-location button {
+  background: black;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid grey;
+  text-align: center;
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.intro-image {
+  border-radius: 20px;
+}
+#img-wrap img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
