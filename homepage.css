@@ -175,3 +175,15 @@ body {
   font-weight: 600;
   margin-left: 1rem;
 }
+
+.category-img {
+  border-radius: 50%;
+  height: 9rem;
+  width: 9rem;
+}
+
+.category-container {
+  text-align: center;
+  display: inline-block;
+  padding: 2rem;
+}
