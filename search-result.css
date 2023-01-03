@@ -3,6 +3,7 @@ body {
   font-family: "Poppins";
   font-style: normal;
   background-color: #ffe2cd;
+  margin: 0;
 }
 .top-nav {
   position: absolute;
@@ -100,4 +101,109 @@ body {
 
 .filter-button {
   font-size: 1.5rem;
+}
+
+.result-row {
+  margin: 0 10.5rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  padding-bottom: 3.5rem;
+}
+
+.result-box {
+  margin: 1em 1em;
+  background-color: #f8f8f8;
+  align-items: center;
+  padding: 1rem;
+  width: 29rem;
+  border-radius: 10px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.result-box-image {
+  width: 10rem;
+  border-radius: 10px;
+  height: 10rem;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.result-box-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+
+.result-box-title {
+  color: #202020;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.result-box-ingre {
+  color: #808080;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.recommend-info {
+  color: #202020;
+  font-size: 1rem;
+}
+
+.result-description {
+  padding-top: 1.5rem;
+}
+.footer {
+  padding: 30px 0px;
+  text-align: center;
+  background-color: #664330;
+  width: 100%;
+}
+
+.footer .footer-row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+.footer .footer-row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+.footer .footer-row a:hover {
+  color: #fff;
+}
+.footer .footer-row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .footer-row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .footer-row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .footer-row a i {
+    margin: 0% 3%;
+  }
 }
