@@ -81,7 +81,7 @@ body {
   color: white;
   border: none;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: none;
+  background-color: transparent;
   color: black;
   border: 1px solid #cf7595;
   font-size: 1rem;
@@ -101,6 +101,7 @@ body {
 
 .filter-button {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .result-row {
@@ -206,4 +207,102 @@ body {
   .footer .footer-row a i {
     margin: 0% 3%;
   }
+}
+
+.filter-box-button {
+  background-color: #dc9292;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  padding: 1rem;
+  float: right;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+
+.close-button {
+  margin-right: 2rem;
+  float: right;
+  background-color: white;
+  border: none;
+  color: #933a3a;
+  font-size: 2rem;
+  font-weight: 800;
+  border-radius: 8px;
+  padding: 0.2rem 0.8rem;
+  margin-left: auto;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 7;
+  border: 1px solid rgb(182, 35, 59);
+  border-radius: 2rem;
+  width: 1500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.filter-box-header {
+  background-color: #933a3a;
+  height: 4rem;
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px black;
+}
+.filter-box-body {
+  background-color: #f9e8dc;
+  border-radius: 0 0 2rem 2rem;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 6;
+  transition: 200ms ease-in-out;
+
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.result-row-filter {
+  margin: 0rem 5rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.result-box-filter {
+  margin: 1rem 1rem;
+  margin-right: 6rem;
+  background-color: #f8f8f8;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }

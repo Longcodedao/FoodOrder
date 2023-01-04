@@ -17,9 +17,10 @@
       src="https://kit.fontawesome.com/c2ac5cb392.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="search-result.js"></script>
   </head>
   <body>
-    <div class="img-wrapper" style="">
+    <div class="img-wrapper">
       <img
         src="logo.png"
         alt=""
@@ -35,7 +36,11 @@
     <div class="top-nav">
       <span class="heading">Sweet Trip</span>
       <form action="" id="my-form">
-        <input type="text" class="search-box" placeholder="Pie" />
+        <input
+          type="text"
+          class="search-box"
+          placeholder="Enter the dessert you want to order"
+        />
         <button>
           <i
             class="fa fa-search"
@@ -69,6 +74,7 @@
         <button class="result-button-main"><span>Pie</span></button>
         <button class="result-button"><span>Restaurant</span></button>
         <button
+          data-modal-target="#modal"
           class="filter-button"
           style="float: right; margin-right: 10rem; margin-top: -4rem"
         >
@@ -531,6 +537,345 @@
         </div>
       </div>
     </div>
+
+    <div class="modal" id="modal">
+      <div class="filter-box-header">
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="filter-box-body">
+        <div
+          class="filter-box-body-header"
+          style="padding-top: 2rem; padding-bottom: 1rem"
+        >
+          <span style="font-size: 3.5rem; font-weight: 800">Filter</span>
+          <button class="filter-box-button">
+            <i class="fas fa-sliders-h" style="font-size: 2rem"></i>
+          </button>
+        </div>
+        <div class="filter-box-content">
+          <span style="font-size: 1.5rem; font-weight: 500">Filter By</span>
+          <button class="result-button" style="font-weight: 500">Rating</button>
+          <button class="result-button" style="font-weight: 500">Price</button>
+          <button class="result-button" style="font-weight: 500">
+            Ingredients
+          </button>
+          <button class="result-button" style="font-weight: 500">
+            Popularity
+          </button>
+          <div class="result-row-filter">
+            <div class="result-box-filter">
+              <img src="meringue2.jpg" alt="" class="result-box-image" />
+              <div class="result-box-detail">
+                <div
+                  style="
+                    background-color: #88e870;
+                    z-index: 1;
+                    position: absolute;
+                    width: 4.5rem;
+                    height: 5rem;
+                    border-radius: 26px;
+                    margin-top: -5.5rem;
+                    margin-left: 12rem;
+                  "
+                >
+                  <span
+                    style="
+                      color: #3f3f3f;
+                      font-weight: 900;
+                      font-size: 3rem;
+                      position: absolute;
+                      z-index: 4;
+                      padding-left: 1.5rem;
+                    "
+                    >4.6</span
+                  >
+                </div>
+                <span class="result-box-title">Meringue Pie</span> <br />
+                <span class="result-box-ingre">lime, egg white, sugar</span>
+                <div class="result-description">
+                  <div
+                    style="
+                      float: left;
+                      display: flex;
+                      align-items: center;
+                      padding-right: 2rem;
+                    "
+                  >
+                    <img
+                      src="price-tag.png"
+                      alt=""
+                      class="tag"
+                      style="padding-right: 0.5rem"
+                    />
+                    <span class="recommend-info">90.000 VND</span>
+                  </div>
+                  <div style="float: right; display: flex; align-items: center">
+                    <img
+                      src="deliver-tag.png"
+                      alt=""
+                      class="tag"
+                      style="padding-right: 0.5rem"
+                    />
+                    <span class="recommend-info">80 Mins</span>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      style="
+                        float: right;
+                        border: none;
+                        background: none;
+                        z-index: 2;
+                        position: absolute;
+                        padding-top: 2.5rem;
+                        padding-left: 3.5rem;
+                      "
+                    >
+                      <img src="adding-button.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-box-filter">
+              <img src="strawberry-pie2.jpg" alt="" class="result-box-image" />
+              <div class="result-box-detail">
+                <div
+                  style="
+                    background-color: #e6e870;
+                    z-index: 1;
+                    position: absolute;
+                    width: 4.5rem;
+                    height: 5rem;
+                    border-radius: 26px;
+                    margin-top: -5.5rem;
+                    margin-left: 12rem;
+                  "
+                >
+                  <span
+                    style="
+                      color: #3f3f3f;
+                      font-weight: 900;
+                      font-size: 3rem;
+                      position: absolute;
+                      z-index: 4;
+                      padding-left: 1.5rem;
+                    "
+                    >3.5</span
+                  >
+                </div>
+                <span class="result-box-title">Strawberry Pie</span> <br />
+                <span class="result-box-ingre"
+                  >whole strawberry, sugar, lime</span
+                >
+                <div class="result-description">
+                  <div
+                    style="
+                      float: left;
+                      display: flex;
+                      align-items: center;
+                      padding-right: 2rem;
+                    "
+                  >
+                    <img
+                      src="price-tag.png"
+                      alt=""
+                      class="tag"
+                      style="padding-right: 0.5rem"
+                    />
+                    <span class="recommend-info">80.000 VND</span>
+                  </div>
+                  <div style="float: right; display: flex; align-items: center">
+                    <img
+                      src="deliver-tag.png"
+                      alt=""
+                      class="tag"
+                      style="padding-right: 0.5rem"
+                    />
+                    <span class="recommend-info">60 Mins</span>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      style="
+                        float: right;
+                        border: none;
+                        background: none;
+                        z-index: 2;
+                        position: absolute;
+                        padding-top: 2.5rem;
+                        padding-left: 3.5rem; ;
+                      "
+                    >
+                      <img src="adding-button.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result-row-filter">
+            <div class="result-box-filter">
+              <img src="apple-pie.jpg" alt="" class="result-box-image" />
+              <div class="result-box-detail">
+                <div
+                  style="
+                    background-color: #d7e870;
+                    z-index: 1;
+                    position: absolute;
+                    width: 4.5rem;
+                    height: 5rem;
+                    border-radius: 26px;
+                    margin-top: -5.5rem;
+                    margin-left: 12rem;
+                  "
+                >
+                  <span
+                    style="
+                      color: #3f3f3f;
+                      font-weight: 900;
+                      font-size: 3rem;
+                      position: absolute;
+                      z-index: 4;
+                      padding-left: 1.5rem;
+                    "
+                    >3.7</span
+                  >
+                </div>
+                <span class="result-box-title">Classic Apple Pie</span> <br />
+                <span class="result-box-ingre">apples, eggs, sugar</span>
+                <div class="result-description">
+                  <div
+                    style="
+                      float: left;
+                      display: flex;
+                      align-items: center;
+                      padding-right: 2rem;
+                    "
+                  >
+                    <img
+                      src="price-tag.png"
+                      alt=""
+                      class="tag"
+                      style="padding-right: 0.5rem"
+                    />
+                    <span class="recommend-info">35.000 VND</span>
+                  </div>
+                  <div style="float: right; display: flex; align-items: center">
+                    <img
+                      src="deliver-tag.png"
+                      alt=""
+                      class="tag"
+                      style="padding-right: 0.5rem"
+                    />
+                    <span class="recommend-info">20 Mins</span>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      style="
+                        float: right;
+                        border: none;
+                        background: none;
+                        z-index: 2;
+                        position: absolute;
+                        padding-top: 2.5rem;
+                        padding-left: 3.5rem;
+                      "
+                    >
+                      <img src="adding-button.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-box-filter">
+              <img src="strawberry-pie.jpg" alt="" class="result-box-image" />
+              <div class="result-box-detail">
+                <div
+                  style="
+                    background-color: #ceeb7b;
+                    z-index: 1;
+                    position: absolute;
+                    width: 4.5rem;
+                    height: 5rem;
+                    border-radius: 26px;
+                    margin-top: -5.5rem;
+                    margin-left: 12rem;
+                  "
+                >
+                  <span
+                    style="
+                      color: #3f3f3f;
+                      font-weight: 900;
+                      font-size: 3rem;
+                      position: absolute;
+                      z-index: 4;
+                      padding-left: 1.5rem;
+                    "
+                    >3.8</span
+                  >
+                </div>
+                <span class="result-box-title">Strawberry-filled Pie</span>
+                <br />
+                <span class="result-box-ingre"
+                  >strawberry jam, strawberry, eggs</span
+                >
+                <div class="result-description">
+                  <div
+                    style="
+                      float: left;
+                      display: flex;
+                      align-items: center;
+                      padding-right: 2rem;
+                    "
+                  >
+                    <img
+                      src="price-tag.png"
+                      alt=""
+                      class="tag"
+                      style="padding-right: 0.5rem"
+                    />
+                    <span class="recommend-info">100.000 VND</span>
+                  </div>
+                  <div style="float: right; display: flex; align-items: center">
+                    <img
+                      src="deliver-tag.png"
+                      alt=""
+                      class="tag"
+                      style="padding-right: 0.5rem"
+                    />
+                    <span class="recommend-info">90 Mins</span>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      style="
+                        float: right;
+                        border: none;
+                        background: none;
+                        z-index: 2;
+                        position: absolute;
+                        padding-top: 2.5rem;
+                        padding-left: 3.5rem;
+                      "
+                    >
+                      <img src="adding-button.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+
     <footer>
       <div class="footer">
         <div class="footer-row">
