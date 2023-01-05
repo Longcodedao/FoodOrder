@@ -64,15 +64,39 @@ body {
 }
 
 .random-offer-box {
-  height: 15rem;
+  height: 260px;
   width: 100%;
   background-color: #664330;
-  margin-top: -3rem;
+  margin-top: -4rem;
+  display: flex;
+  align-items: center;
 }
 
 .offer-img {
-  height: 12rem;
+  max-height: 85%;
   width: 18rem;
   border-radius: 10px;
-  vertical-align: middle;
+  margin-left: 10rem;
+}
+
+.random-offer-description {
+  margin-left: 3rem;
+}
+.random-offer-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.random-offer-ingre {
+  font-size: 0.8rem;
+}
+
+.random-offer-info-box {
+  margin-top: 1rem;
+}
+.random-offer-info {
+  border-right: solid 2px #ffe2cd;
+  padding-right: 3rem;
+  height: 3rem;
+  display: inline-block;
 }
