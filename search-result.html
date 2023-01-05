@@ -553,17 +553,34 @@
         <button data-close-button class="close-button">&times;</button>
       </div>
       <div class="filter-box-body">
-        <form action="" style="font-size: 1.5rem">
-          <input type="radio" id="popularity" name="sort-category" />
-          <label for="popularity">Popularity</label> <br />
-          <input type="radio" id="price" name="sort-category" />
-          <label for="price">Price</label><br />
-          <input type="radio" id="rating" name="sort-category" />
-          <label for="rating">Rating</label><br />
+        <form action="" style="font-size: 1.5rem; font-weight: 600">
+          <div style="padding-bottom: 1rem">
+            Popularity <br />
+            <input type="radio" id="popularity" name="sort-category" />
+            <label for="popularity">Highest First</label> <br />
+            <input type="radio" id="popularity" name="sort-category" />
+            <label for="popularity">Lowest First</label> <br />
+          </div>
+          <div style="padding-bottom: 1rem">
+            Price <br />
+            <input type="radio" id="price" name="sort-category" />
+            <label for="price">Highest First</label><br />
+            <input type="radio" id="price" name="sort-category" />
+            <label for="price">Lowest First</label><br />
+          </div>
+          <div style="padding-bottom: 1rem">
+            Rating <br />
+            <input type="radio" id="rating" name="sort-category" />
+            <label for="rating">Highest First</label><br />
+            <input type="radio" id="rating" name="sort-category" />
+            <label for="rating">Lowest First</label><br />
+          </div>
         </form>
       </div>
       <div class="filter-box-end">
-        <button class="filter-submit-button">Apply Sorting</button>
+        <button data-close-button class="filter-submit-button" type="submit">
+          Apply Sorting
+        </button>
       </div>
     </div>
 
