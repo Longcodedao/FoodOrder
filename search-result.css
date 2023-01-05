@@ -244,7 +244,7 @@ body {
   z-index: 7;
   border: 1px solid rgb(182, 35, 59);
   border-radius: 2rem;
-  width: 1500px;
+  width: 600px;
   max-width: 80%;
 }
 
@@ -254,17 +254,18 @@ body {
 
 .filter-box-header {
   background-color: #933a3a;
-  height: 4rem;
+  height: 5rem;
   border-radius: 2rem 2rem 0 0;
   display: flex;
   align-items: center;
   border-bottom: solid 1px black;
 }
 .filter-box-body {
-  background-color: #f9e8dc;
-  border-radius: 0 0 2rem 2rem;
-  padding-left: 4rem;
-  padding-bottom: 4rem;
+  background-color: #fddfdf;
+  border-radius: 0 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 
 #overlay {
@@ -305,4 +306,28 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.sort-box-left {
+  width: 20rem;
+  height: 30rem;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  margin-bottom: 0;
+}
+
+.filter-submit-button {
+  width: 100%;
+  background-color: rgb(236, 73, 100);
+  height: 4rem;
+  border: none;
+  color: white;
+  border-radius: 0 0 2rem 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.filter-submit-button:hover {
+  background-color: rgb(153, 24, 45);
 }
