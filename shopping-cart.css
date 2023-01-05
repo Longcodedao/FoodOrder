@@ -3,28 +3,19 @@ body {
   font-family: "Poppins";
   font-style: normal;
   background-color: #ffe2cd;
-  margin: 0;
+  margin: 0 auto;
 }
 body {
   font-family: "Poppins";
   font-style: normal;
   background-color: #ffe2cd;
-  margin: 0;
 }
-.top-nav {
-  position: absolute;
-  width: 1487px;
-  height: 111px;
-  left: 275px;
-  top: 64px;
-}
-
 .top-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 30rem;
+  margin: 0 5em;
 }
 
 .heading {
@@ -33,6 +24,7 @@ body {
   font-size: 3rem;
   font-family: "Poppins";
 }
+
 #my-form input,
 #my-form button {
   border-radius: 10px;
