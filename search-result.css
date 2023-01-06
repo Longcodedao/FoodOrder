@@ -6,19 +6,17 @@ body {
   margin: 0;
 }
 .top-nav {
-  position: absolute;
-  width: 1487px;
-  height: 111px;
-  left: 275px;
-  top: 64px;
-}
-
-.top-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
-  gap: 30rem;
+  margin: 0 5em;
+  justify-content: space-around;
+}
+.top-nav-left {
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  align-items: center;
 }
 
 .heading {
@@ -26,7 +24,10 @@ body {
   font-weight: 700;
   font-size: 3rem;
   font-family: "Poppins";
+  white-space: nowrap;
+  overflow: hidden;
 }
+
 #my-form input,
 #my-form button {
   border-radius: 10px;
@@ -38,7 +39,7 @@ body {
   border-right-width: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  width: 30rem;
+  width: 25rem;
   font-size: 1rem;
   padding: 1rem;
 }
@@ -55,6 +56,7 @@ body {
   display: flex;
   flex-direction: row;
   padding: 0px;
+  max-width: 40%;
 }
 .result {
   margin-left: 10rem;

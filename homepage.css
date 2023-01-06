@@ -7,27 +7,33 @@ body {
   padding: 0;
 }
 
-.heading {
-  font-size: 50px;
-  color: #a5516f;
-  float: left;
-  padding-top: 2.5rem;
-}
 .top-nav {
-  overflow: hidden;
-  margin: 1rem;
-}
-
-#my-form {
   display: flex;
   flex-direction: row;
-  padding: 30px;
+  align-items: center;
+  margin: 0 5em;
+  justify-content: space-around;
+}
+.top-nav-left {
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  align-items: center;
+}
+
+.heading {
+  color: #a5516f;
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: "Poppins";
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #my-form input,
 #my-form button {
   border-radius: 10px;
-  border: 1px solid grey;
+  border: 1px solid #808080;
   padding: 2px;
 }
 #my-form input {
@@ -35,7 +41,7 @@ body {
   border-right-width: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  width: 30rem;
+  width: 25rem;
   font-size: 1rem;
   padding: 1rem;
 }
@@ -48,6 +54,12 @@ body {
   padding: 1rem;
 }
 
+#my-form {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  max-width: 40%;
+}
 .top-left {
   max-width: 40%;
 }
