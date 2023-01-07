@@ -64,16 +64,6 @@ body {
   max-width: 40%;
 }
 
-.random-offer-box {
-  height: 260px;
-  width: 100%;
-  background-color: #664330;
-  margin-top: -4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .offer-img {
   max-height: 85%;
   width: 18rem;
@@ -132,8 +122,235 @@ button {
   padding-left: 2rem;
 }
 
-.checkout-wrapper {
+.random-offer-box {
+  height: 260px;
+  width: 100%;
+  background-color: #664330;
+  margin-top: -4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.checkout-wrapper {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  transform: translateY(3rem);
+}
+
+.left-offer {
+  font-size: 1rem;
+  color: #404040;
+  margin-right: 4rem;
+}
+
+.active-offer-header {
+  color: #e07ea1;
+  padding-top: 0.5rem;
+}
+
+.offer-header {
+  padding-top: 0.5rem;
+}
+
+.offer-wrapper {
+  display: flex;
+  width: 35rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  align-items: center;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.offer-description-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.offer-description {
+  color: #808080;
+  font-size: 0.8rem;
+}
+
+.offer-img {
+  height: 9rem;
+  width: 9rem;
+  border-radius: 10px;
+}
+
+.adding-button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  z-index: 3;
+  position: absolute;
+  transform: translate(-4rem, 7.5rem);
+}
+.adding-img {
+  border: none;
+  background: none;
+}
+
+.offer-price {
+  font-weight: 600;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+/* 
+.rating {
+  background-color: #38f577;
+  height: 3rem;
+  width: 2rem;
+  padding-left: 0.5rem;
+  font-weight: 800;
+  font-size: 2rem;
+  z-index: 12;
+  position: absolute;
+  border-radius: 10px;
+  transform: translate(, -3rem);
+} */
+
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  border-left: solid 2px #3b0000;
+}
+
+.cart-container {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  max-width: 50%;
+  margin-left: 3rem;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.item-count-box {
+  display: block;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-info {
+  padding: 1rem 0;
+  max-width: 65%;
+}
+
+.cart-item-name {
+  padding-bottom: 0.25rem;
+}
+
+.cart-item-quantity-wrapper {
+  display: block;
+  margin-left: auto;
+}
+
+.decrease-button,
+.increase-button {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-weight: 300;
+}
+
+.cart-item-quantity {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+
+.random-offer-img {
+  max-height: 85%;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.subtotal-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.subtotal-number-wrapper {
+  margin-left: auto;
+}
+
+.checkout-button {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #e07ea1;
+  color: white;
+  border-radius: 20px;
+}
+.checkout-button:hover {
+  background-color: #6e072b;
+}
+footer {
+  margin-top: 10rem;
+}
+.footer {
+  padding: 30px 0px;
+  text-align: center;
+  background-color: #664330;
+  width: 100%;
+}
+
+.footer .footer-row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+.footer .footer-row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+.footer .footer-row a:hover {
+  color: #fff;
+}
+.footer .footer-row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .footer-row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .footer-row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .footer-row a i {
+    margin: 0% 3%;
+  }
 }
