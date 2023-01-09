@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Schedule Order</title>
+    <link rel="stylesheet" href="schedule-order.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c2ac5cb392.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="top-nav">
+      <div class="top-nav-left">
+        <div>
+          <img
+            src="logo.png"
+            alt=""
+            style="width: 250px; height: 250px; display: inline-block"
+          />
+        </div>
+
+        <div class="heading">Sweet Trip</div>
+      </div>
+      <div style="width: 20%"></div>
+      <form action="" id="my-form">
+        <input
+          type="text"
+          class="search-box"
+          placeholder="Enter the dessert you want to order"
+        />
+        <button>
+          <i
+            class="fa fa-search"
+            style="font-size: 1.5rem; font-weight: 600"
+          ></i>
+        </button>
+        <img
+          src="cart.png"
+          alt=""
+          style="
+            width: 3rem;
+            height: 3rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+          "
+        />
+
+        <img
+          src="avatar.png"
+          alt=""
+          style="border: 3px solid blue; border-radius: 16px"
+        />
+      </form>
+    </div>
+
+    <div class="checkout-section">
+      <div class="checkout-left">
+        <div class="checkout-header">Secure Checkout</div>
+
+        <div class="delivery-address-section">
+          <div class="deliver-address-header">
+            <i
+              class="fas fa-map-marker-alt"
+              style="color: #e07ea1; padding-right: 1rem; font-size: 1.75rem"
+            ></i
+            >Delivery Address
+          </div>
+          <div class="delivery-address-wrapper">
+            <div class="delivery-address-box">
+              <i
+                class="fas fa-map-marker-alt"
+                style="color: white; font-size: 2rem"
+              ></i>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Enter your address: "
+                class="address-input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="packaging-section">
+            <div class="packaging-header">
+              <i
+                class="fas fa-box"
+                style="color: #e07ea1; padding-right: 1rem; font-size: 1.75rem"
+              ></i
+              >Packaging Choice
+            </div>
+            <div class="packaging-choices-row">
+              <div class="card">
+                <input type="radio" name="pricing" id="card1" />
+                <label for="card1">
+                  <h5>BASIC</h5>
+                  <h2>
+                    <span>VND</span>
+                    8000
+                  </h2>
+                  <img src="paper-packaging.jpg" alt="" class="package-img" />
+                </label>
+              </div>
+              <div class="card">
+                <input type="radio" name="pricing" id="card2" checked />
+                <label for="card2">
+                  <h5>STANDARD</h5>
+                  <h2>
+                    <span>VND</span>
+                    12000
+                  </h2>
+                  <img src="plastic-packaging.jpg" alt="" class="package-img" />
+                </label>
+              </div>
+              <div class="card">
+                <input type="radio" name="pricing" id="card3" />
+                <label for="card3">
+                  <h5>PREMIUM</h5>
+                  <h2>
+                    <span>VND</span>
+                    18000
+                  </h2>
+                  <img
+                    src="aluminium-packaging.jpg"
+                    alt=""
+                    class="package-img"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-container">
+        <div class="item-count-box">
+          <div
+            style="display: inline-block; font-size: 1.5rem; font-weight: 600"
+          >
+            Cart
+          </div>
+          <div style="float: right; font-weight: 400">
+            <span class="item-count">2</span> items
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="cart-item-info">
+            <div class="cart-item-name">Yule Log</div>
+            <div style="color: #808080" class="cart-item-price-container">
+              <span class="cart-item-price">100.000</span>VND
+            </div>
+          </div>
+          <div class="cart-item-quantity-wrapper">
+            <button class="decrease-button">
+              <i class="fa fa-minus"></i>
+            </button>
+            <span class="cart-item-quantity">2</span>
+            <button class="increase-button">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="cart-item-info">
+            <div class="cart-item-name">
+              Sweet Blackberries Stuffed Cake Rainbow Fluffed Cake AMAZING GOOD
+              JOB!!
+            </div>
+            <div style="color: #808080" class="cart-item-price-container">
+              <span class="cart-item-price">390.000</span>VND
+            </div>
+          </div>
+          <div class="cart-item-quantity-wrapper">
+            <button class="decrease-button">
+              <i class="fa fa-minus"></i>
+            </button>
+            <span class="cart-item-quantity">1</span>
+            <button class="increase-button">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="bill-detail">
+          <div>Bill Detail</div>
+          <div class="item-total-wrapper">
+            <div>Item Total</div>
+            <div class="item-total-number">280.000 <span>VND</span></div>
+          </div>
+          <div class="packaging-total-wrapper">
+            <div id="packaging-choice-cart">Premium Packaging</div>
+            <div class="item-total-number">20.000 <span>VND</span></div>
+          </div>
+
+          <div class="delivery-total-wrapper">
+            <div id="delivery-fee">
+              Delivery Fee: <span class="delivery-distance">12.8 km</span>
+            </div>
+            <div class="item-total-number">20.000 <span>VND</span></div>
+          </div>
+        </div>
+
+        <div class="subtotal-wrapper">
+          <div class="subtotal-head">Total</div>
+          <div class="subtotal-number-wrapper">340.000 VND</div>
+        </div>
+        <div style="color: #808080; font-size: 0.75rem">
+          Extra charges may apply
+        </div>
+
+        <button type="submit" class="checkout-button">
+          Proceed to Payment
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="footer-row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div class="row" style="color: white">
+          Sweet Trip Copyright © 2022 - All rights reserved
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
