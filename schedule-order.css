@@ -61,6 +61,7 @@ body {
 
 .checkout-section {
   display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
   transform: translateY(-2rem);
@@ -339,13 +340,13 @@ button {
 
 footer {
   margin-top: 2rem;
-  bottom: 0;
 }
 .footer {
   padding: 30px 0px;
   text-align: center;
   background-color: #664330;
   width: 100%;
+  min-height: 100%;
 }
 
 .footer .footer-row {
@@ -385,4 +386,10 @@ footer {
   .footer .footer-row a i {
     margin: 0% 3%;
   }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
