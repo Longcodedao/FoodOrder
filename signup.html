@@ -26,65 +26,88 @@
     ></script>
   </head>
   <body>
-    <form action="">
-      <div class="heading-container">
-        <h2>Create an account</h2>
-        <p id="subheading">Sign in with your username and password</p>
+    <div class="wrapper">
+      <form action="" class="signup-form">
+        <div class="heading-container" style="margin-left: 0.25rem">
+          <h1>Create an account</h1>
+          <p id="subheading">Sign in with your username and password</p>
+        </div>
+
+        <div class="main-container">
+          <label for="username"></label>
+          <input
+            type="text"
+            placeholder="Enter your username"
+            name="username"
+            class="input"
+            required
+          />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            class="input"
+            required
+          />
+
+          <label for="password"></label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            name="password"
+            required
+            class="input"
+            style="margin-bottom: 2.5rem"
+          />
+
+          <button type="submit" class="create-button">Create an account</button>
+        </div>
+
+        <div class="box-break">or</div>
+
+        <button type="submit" class="sign-up-google">
+          <img
+            src="google.png"
+            alt=""
+            width="28"
+            height="28"
+            class="google-image"
+          />
+          Sign up via google
+        </button>
+        <p style="padding-top: 1rem">
+          Already have an account? <a href="#">Sign in!</a>
+        </p>
+      </form>
+
+      <div class="background-page">
+        <img
+          src="dessert-background.png"
+          class=""
+          alt=""
+          style="width: 40vw; height: 100vh"
+        />
       </div>
+    </div>
 
-      <div class="main-container">
-        <!-- username -->
-        <label for="username"></label>
-        <input
-          type="text"
-          placeholder="Enter your username"
-          name="username"
-          class="input"
-          required
-        />
-
-        <br /><br />
-        <!-- email -->
-        <label for="email"></label>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          name="email"
-          class="input"
-          required
-        />
-        <br /><br />
-
-        <!-- password -->
-        <label for="password"></label>
-        <input
-          type="password"
-          placeholder="Enter password"
-          name="password"
-          required
-          class="input"
-        />
-        <br /><br />
-
-        <!-- create account button -->
-        <button type="submit" class="create-button">Create an account</button>
-      </div>
-
-      <!-- or sign up via google account -->
-      <br />
-      <span class="box-break">or</span>
-      <br />
-      <br />
-
-      <button type="submit" class="sign-up-google">
-        <img src="google.png" alt="" width="20" height="23" />
-        Sign up via google
-      </button>
-      <p>Already have an account? <a href="#">Sign in!</a></p>
-    </form>
-
-    <script src="main.js"></script>
-    <img src="sleepy.png" class="logo" alt="" />
-    <img src="dessert-background.png" class="background-page" alt="" />
+    <img
+      src="sleepy.png"
+      class="logo"
+      alt=""
+      style="
+        z-index: 2;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: -19.4%;
+        bottom: 0;
+        transform: scale(1);
+        height: 40vh;
+        width: 20vw;
+      "
+    />
   </body>
 </html>
