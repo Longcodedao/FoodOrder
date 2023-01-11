@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/c2ac5cb392.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="schedule-order.js"></script>
   </head>
   <body>
     <div class="top-nav">
@@ -218,11 +219,34 @@
           Extra charges may apply
         </div>
 
-        <button type="submit" class="checkout-button">
+        <button
+          data-modal-target="#modal"
+          type="submit"
+          class="checkout-button"
+        >
           Proceed to Payment
         </button>
       </div>
     </div>
+
+    <div class="modal" id="modal">
+      <div class="checkout-modal-header">
+        <span
+          style="
+            color: white;
+            font-weight: 600;
+            font-size: 2.5rem;
+            padding: 1.5rem;
+          "
+          >Checkout</span
+        >
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+
+      <div class="checkout-modal-body"></div>
+    </div>
+
+    <div id="overlay"></div>
 
     <footer>
       <div class="footer">
