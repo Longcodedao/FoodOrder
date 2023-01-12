@@ -243,7 +243,81 @@
         <button data-close-button class="close-button">&times;</button>
       </div>
 
-      <div class="checkout-modal-body"></div>
+      <div class="checkout-modal-body">
+        <div style="font-size: 1.5rem; font-weight: 600; margin-left: 1rem">
+          Payment Method
+        </div>
+        <div class="payment-method-wrap">
+          <div class="payment-method">
+            <input type="radio" name="method" id="method1" />
+            <label for="method1">
+              <img src="mastercard.png" alt="" class="payment-img" />
+            </label>
+          </div>
+
+          <div class="payment-method">
+            <input type="radio" name="method" id="method2" />
+            <label for="method2">
+              <img src="visa.jpg" alt="" class="payment-img" />
+            </label>
+          </div>
+
+          <div class="payment-method">
+            <input type="radio" name="method" id="method3" />
+            <label for="method3">
+              <img src="paypal.png" alt="" class="payment-img" />
+            </label>
+          </div>
+          <div class="payment-method">
+            <input type="radio" name="method" id="method4" />
+            <label for="method4">
+              <img src="cash.png" alt="" class="payment-img" />
+            </label>
+          </div>
+        </div>
+
+        <input
+          type="text"
+          class="payment-input"
+          placeholder="Enter your name on card"
+          id="name"
+          style="margin-top: 2rem"
+        />
+        <input
+          type="text"
+          class="payment-input"
+          placeholder="Enter card number"
+          id="card-number"
+        />
+        <div style="display: flex; margin-bottom: 2rem">
+          <input
+            type="text"
+            class="payment-input"
+            placeholder="Expiration date"
+            id="expiration-date"
+            style="width: 45%; margin-right: 1rem"
+          />
+          <input
+            type="text"
+            class="payment-input"
+            placeholder="CVV"
+            id="cvv"
+            style="width: 40%"
+          />
+        </div>
+        <div class="total-bill">
+          <div>Total(Tax included)</div>
+          <div style="margin-left: auto; font-weight: 600">
+            <span
+              class="total-number"
+              style="font-size: 1.5rem; color: black; font-weight: 600"
+              >340.000</span
+            >
+            VND
+          </div>
+        </div>
+        <button class="payment-button" type="submit">Complete Payment</button>
+      </div>
     </div>
 
     <div id="overlay"></div>
