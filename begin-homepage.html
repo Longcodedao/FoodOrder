@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="begin-homepage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,36 +35,24 @@
 
         <div class="heading">Sweet Trip</div>
       </div>
-      <div style="width: 20%"></div>
+      <div style="width: 10%"></div>
       <form action="" id="my-form">
         <input
           type="text"
           class="search-box"
           placeholder="Enter the dessert you want to order"
         />
-        <button>
+        <button id="search-button">
           <i
             class="fa fa-search"
             style="font-size: 1.5rem; font-weight: 600"
           ></i>
         </button>
-        <img
-          src="cart.png"
-          alt=""
-          style="
-            width: 3rem;
-            height: 3rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-          "
-        />
-
-        <img
-          src="avatar.png"
-          alt=""
-          style="border: 3px solid blue; border-radius: 16px"
-        />
       </form>
+      <div style="display: flex; transform: translateX(-2rem)">
+        <button id="sign-in-button">Sign In</button>
+        <button id="sign-up-button">Create An Account</button>
+      </div>
     </div>
     <div class="body-wrapper">
       <div

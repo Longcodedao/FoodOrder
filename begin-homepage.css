@@ -49,7 +49,7 @@ button {
   cursor: pointer;
 }
 #my-form input,
-#my-form button {
+#search-button {
   border-radius: 10px;
   border: 1px solid #808080;
   padding: 2px;
@@ -63,7 +63,7 @@ button {
   font-size: 1rem;
   padding: 1rem;
 }
-#my-form button {
+#search-button {
   background: white;
   color: grey;
   border-left-width: 0;
@@ -78,7 +78,32 @@ button {
   padding: 0px;
   max-width: 40%;
 }
-
+#sign-in-button,
+#sign-up-button {
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  margin: 5px;
+}
+#sign-in-button {
+  background-color: #664330;
+  color: white;
+}
+#sign-up-button {
+  background-color: #a5516f;
+  color: white;
+}
+#sign-in-button:hover,
+#sign-up-button:hover {
+  transform: scale(1.1);
+}
+#sign-in-button:hover {
+  background-color: #ad7252;
+}
+#sign-up-button:hover {
+  background-color: #d46d91;
+}
 .intro {
   justify-content: center;
   align-items: center;
