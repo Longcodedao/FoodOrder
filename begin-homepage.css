@@ -76,7 +76,7 @@ button {
   display: flex;
   flex-direction: row;
   padding: 0px;
-  max-width: 40%;
+  max-width: 30%;
 }
 #sign-in-button,
 #sign-up-button {
@@ -84,7 +84,7 @@ button {
   padding: 1rem;
   border-radius: 0.75rem;
   border: none;
-  margin: 5px;
+  margin: 8px;
 }
 #sign-in-button {
   background-color: #664330;
