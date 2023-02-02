@@ -363,7 +363,15 @@ a,
 u {
   text-decoration: none !important;
 }
+.cart-button:hover,
+.avatar-button:hover {
+  transform: scale(1.1);
+}
 
+a:visited {
+  text-decoration: none;
+  color: #c5804e;
+}
 .fav-button:hover {
   transform: scale(1.1);
 }

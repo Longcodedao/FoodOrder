@@ -214,6 +214,10 @@ input[type="radio"]:checked {
 input[type="radio"]:checked:after {
   background-color: #e07ea1;
 }
+.cart-button:hover,
+.avatar-button:hover {
+  transform: scale(1.1);
+}
 
 .packaging-choices-row {
   display: flex;
@@ -517,9 +521,11 @@ body {
   color: white;
   border: none;
   border-radius: 30px;
+  padding: 2rem 2rem;
+  transform: translateX(12rem);
 }
 
 .payment-button:hover {
-  transform: scale(1.02);
   background-color: #6e072b;
+  transform: translateX(12rem) scale(1.1);
 }

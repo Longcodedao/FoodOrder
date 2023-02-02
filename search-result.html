@@ -44,28 +44,37 @@
           class="search-box"
           placeholder="Enter the dessert you want to order"
         />
-        <button>
+        <button id="search-button">
           <i
             class="fa fa-search"
             style="font-size: 1.5rem; font-weight: 600"
           ></i>
         </button>
-        <img
-          src="cart.png"
-          alt=""
-          style="
-            width: 3rem;
-            height: 3rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-          "
-        />
-
-        <img
-          src="avatar.png"
-          alt=""
-          style="border: 3px solid blue; border-radius: 16px"
-        />
+        <button
+          class="cart-button"
+          style="border: none; background-color: transparent; padding: none"
+        >
+          <img
+            src="cart.png"
+            alt=""
+            style="
+              width: 3rem;
+              height: 3rem;
+              padding-left: 2rem;
+              padding-right: 2rem;
+            "
+          />
+        </button>
+        <button
+          class="avatar-button"
+          style="border: none; background-color: transparent; padding: none"
+        >
+          <img
+            src="avatar.png"
+            alt=""
+            style="border: 3px solid blue; border-radius: 16px"
+          />
+        </button>
       </form>
     </div>
 
@@ -78,6 +87,7 @@
           <div>
             <button class="result-button-main">Pie</button>
             <button class="result-button">Popularity</button>
+            <button class="result-button">Rating</button>
           </div>
           <div style="margin-left: auto">
             <button data-modal-target="#modal" class="filter-button">
@@ -90,6 +100,7 @@
 
       <div class="result-row">
         <div class="result-box">
+          <a href="">
           <img src="apple-pie.jpg" alt="" class="result-box-image" />
           <div class="result-box-detail">
             <div
@@ -116,6 +127,7 @@
                 >3.7</span
               >
             </div>
+
             <span class="result-box-title">Classic Apple Pie</span> <br />
             <span class="result-box-ingre">apples, eggs, sugar</span>
             <div class="result-description">
@@ -144,6 +156,7 @@
                 />
                 <span class="recommend-info">20 Mins</span>
               </div>
+            </a>
               <div>
                 <button
                   type="button"
@@ -156,6 +169,7 @@
                     padding-top: 2.5rem;
                     padding-left: 1.5rem;
                   "
+                  class="adding-button"
                 >
                   <img src="adding-button.png" alt="" />
                 </button>
@@ -165,6 +179,7 @@
         </div>
 
         <div class="result-box">
+          <a href="">
           <img src="strawberry-pie.jpg" alt="" class="result-box-image" />
           <div class="result-box-detail">
             <div
@@ -221,6 +236,7 @@
                 />
                 <span class="recommend-info">90 Mins</span>
               </div>
+            </a>
               <div>
                 <button
                   type="button"
@@ -233,6 +249,7 @@
                     padding-top: 2.5rem;
                     padding-left: 1.5rem;
                   "
+                  class="adding-button"
                 >
                   <img src="adding-button.png" alt="" />
                 </button>
@@ -242,6 +259,7 @@
         </div>
 
         <div class="result-box">
+          <a href="">
           <img src="blueberry-pie.jpg" alt="" class="result-box-image" />
           <div class="result-box-detail">
             <div
@@ -296,8 +314,10 @@
                 />
                 <span class="recommend-info">90 Mins</span>
               </div>
+            </a>
               <div>
                 <button
+                  class="adding-button"
                   type="button"
                   style="
                     float: right;
@@ -307,7 +327,7 @@
                     position: absolute;
                     padding-top: 2.5rem;
                     padding-left: 1.5rem;
-                  "
+                  " class="adding-button"
                 >
                   <img src="adding-button.png" alt="" />
                 </button>
@@ -319,6 +339,7 @@
 
       <div class="result-row">
         <div class="result-box">
+          <a href="">
           <img src="meringue2.jpg" alt="" class="result-box-image" />
           <div class="result-box-detail">
             <div
@@ -373,6 +394,7 @@
                 />
                 <span class="recommend-info">80 Mins</span>
               </div>
+            </a>
               <div>
                 <button
                   type="button"
@@ -385,6 +407,7 @@
                     padding-top: 2.5rem;
                     padding-left: 1.5rem;
                   "
+                  class="adding-button"
                 >
                   <img src="adding-button.png" alt="" />
                 </button>
@@ -394,6 +417,7 @@
         </div>
 
         <div class="result-box">
+          <a href="">
           <img src="strawberry-pie2.jpg" alt="" class="result-box-image" />
           <div class="result-box-detail">
             <div
@@ -447,7 +471,7 @@
                   style="padding-right: 0.5rem"
                 />
                 <span class="recommend-info">60 Mins</span>
-              </div>
+              </div></a>
               <div>
                 <button
                   type="button"
@@ -459,7 +483,7 @@
                     position: absolute;
                     padding-top: 2.5rem;
                     padding-left: 1.5rem;
-                  "
+                  " class="adding-button"
                 >
                   <img src="adding-button.png" alt="" />
                 </button>
@@ -469,6 +493,7 @@
         </div>
 
         <div class="result-box">
+          <a href="">
           <img src="wined-orange.jpg" alt="" class="result-box-image" />
           <div class="result-box-detail">
             <div
@@ -522,7 +547,7 @@
                   style="padding-right: 0.5rem"
                 />
                 <span class="recommend-info">120 Mins</span>
-              </div>
+              </div></a>
               <div>
                 <button
                   type="button"
@@ -535,6 +560,7 @@
                     padding-top: 2.5rem;
                     padding-left: 1.5rem;
                   "
+                  class="adding-button"
                 >
                   <img src="adding-button.png" alt="" />
                 </button>

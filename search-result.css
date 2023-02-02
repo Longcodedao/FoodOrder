@@ -5,6 +5,10 @@ body {
   background-color: #ffe2cd;
   margin: 0;
 }
+.cart-button:hover,
+.avatar-button:hover {
+  transform: scale(1.1);
+}
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -114,12 +118,21 @@ body {
   font-size: 1rem;
   font-weight: 500;
 }
-
+.result-button-main:hover,
+.result-button:hover,
+.filter-button:hover {
+  transform: scale(1.1);
+}
 .filter-button {
   font-size: 1.5rem;
   cursor: pointer;
 }
-
+a {
+  text-decoration: none;
+}
+.adding-button:hover {
+  transform: scale(1.1);
+}
 .result-row {
   margin: 0 10.5rem;
   display: flex;
