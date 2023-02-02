@@ -105,6 +105,24 @@ body {
   margin-right: 2rem;
 }
 
+.address-form input[type="submit"] {
+  background-color: #bd2d5f;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.address-form input[type="submit"]:hover {
+  background-color: #d11658;
+  transform: scale(1.02);
+}
 .address-input {
   margin-top: 1rem;
   padding: 1rem;
