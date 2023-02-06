@@ -5,6 +5,9 @@ body {
   background-color: #ffe2cd;
   margin: 0;
 }
+button {
+  cursor: pointer;
+}
 .cart-button:hover,
 .avatar-button:hover {
   transform: scale(1.1);
@@ -301,6 +304,20 @@ footer {
   padding-left: 2rem;
 }
 
+.submit-filter {
+  padding: 1rem;
+  background-color: #cf7595;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.submit-filter:hover {
+  background-color: #a54768;
+  transform: scale(1.1);
+}
 #overlay {
   position: fixed;
   opacity: 0;

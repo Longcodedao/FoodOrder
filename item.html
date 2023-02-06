@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/c2ac5cb392.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="item.js"></script>
   </head>
   <body>
     <div class="top-nav">
@@ -134,9 +135,64 @@
           ><a href="#review-section" class="check-review-button">
             Check Reviews!</a
           >
+          <button class="rating-and-review-button" data-modal-target="#modal">
+            Rate and Review...
+          </button>
+        </div>
+      </div>
+      <div class="modal" id="modal">
+        <div class="review-box-header">
+          <span
+            style="
+              padding-left: 2.5rem;
+              font-size: 2.5rem;
+              font-weight: 800;
+              color: white;
+            "
+            >Rate and Review</span
+          >
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="review-box-body">
+          <div style="float: left">
+            <div style="font-size: 2rem; color: #8f2428">
+              I ate...
+              <span
+                style="font-size: 2.25rem; font-weight: 600"
+                class="review-item-name"
+                >Chocolate Lava Cake</span
+              >
+            </div>
+          </div>
+          <div class="star-rating">
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <button class="star">&#9734;</button>
+            <div style="font-size: 1.5rem; transform: translate(6rem, 0rem)">
+              Rating:
+              <span class="current_rating" style="color: #e79416"
+                >0 out of 5</span
+              >
+            </div>
+          </div>
+          <form action="" method="get" class="review-form">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Add a review: "
+              class="review"
+            ></textarea>
+            <input type="submit" value="Save" class="submit-rating-button" />
+          </form>
         </div>
       </div>
     </div>
+    <div id="overlay"></div>
+
     <div class="recommendation-wrapper">
       <a href="">
         <div class="recommendation">
