@@ -228,7 +228,6 @@ a {
   display: flex;
   background-color: #fff;
   padding: 2rem;
-  width: 65rem;
   border-radius: 1.5rem;
   filter: drop-shadow(3px 3px 5px rgb(124, 124, 124));
 }
