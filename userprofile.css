@@ -71,3 +71,136 @@ button {
   align-items: center;
   flex-grow: 2;
 }
+
+.avatar-img {
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  border: 5px solid rgb(233, 233, 233);
+  filter: drop-shadow(3px 4px 5px rgb(117, 117, 117));
+}
+
+.user-info {
+  margin-left: 1.5rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  filter: drop-shadow(2px 2px 2px #000);
+  transform: translateY(-1rem);
+}
+
+.wrapper-header {
+  height: 3rem;
+  background-color: #c4a5ff;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  width: 65rem;
+  border-bottom: 2px solid #a5516f;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.wrapper-body {
+  background-color: #f8c2f8;
+  width: 65rem;
+  padding: 1rem;
+}
+
+.update-avatar {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.submit-button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem;
+  background-color: #a5516f;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  transform: scale(1.2);
+  background-color: #ad3761;
+  color: white;
+}
+
+.update-info {
+  padding: 2rem;
+}
+
+.update-info-wrapper {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.user-info-change {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #f7e7dc;
+  width: 30rem;
+  height: 2rem;
+  font-size: 0.75rem;
+  color: #494949;
+  float: right;
+  margin-right: 15rem;
+  border: 1px solid #494949;
+  transform: translateY(-0.5rem);
+}
+footer {
+  margin-top: 10rem;
+}
+.footer {
+  padding: 30px 0px;
+  text-align: center;
+  background-color: #664330;
+  width: 100%;
+}
+
+.footer .footer-row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+.footer .footer-row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+.footer .footer-row a:hover {
+  color: #fff;
+}
+.footer .footer-row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .footer-row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .footer-row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .footer-row a i {
+    margin: 0% 3%;
+  }
+}
