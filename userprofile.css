@@ -204,3 +204,19 @@ footer {
     margin: 0% 3%;
   }
 }
+
+.log-out-button {
+  background-color: #6020d8;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #d1c9df;
+}
+.log-out-button:hover {
+  transform: scale(1.1);
+  background-color: #531bb9;
+  color: #fff;
+}
