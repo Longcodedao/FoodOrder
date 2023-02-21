@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entering Your Information</title>
+    <link rel="stylesheet" href="user-init-info.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c2ac5cb392.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="" class="user-info-wrapper">
+        <div class="heading-container" style="margin-left: 0.25rem">
+          <h1>Entering your information</h1>
+          <p id="subheading">To finish creating your account</p>
+        </div>
+
+        <div class="main-container">
+          <label for="name"></label>
+          <input
+            type="text"
+            placeholder="&#xf007;      Enter your name"
+            name="name"
+            class="input"
+            required
+          />
+
+          <label for="address"></label>
+          <input
+            type="text"
+            placeholder="&#xf124;     Enter your address"
+            name="address"
+            class="input"
+            required
+          />
+          <label for="postal-code"></label>
+          <input
+            type="text"
+            placeholder="&#xf2b6;     Enter your postal code"
+            name="postal-code"
+            required
+            class="input"
+          />
+
+          <label for="phone-number"></label>
+          <input
+            type="text"
+            placeholder="&#xf879;      Enter your phone number"
+            name="phone-number"
+            required
+            class="input"
+            style="margin-bottom: 2.5rem"
+          />
+
+          <button type="submit" class="create-button">
+            <i
+              class="fas fa-arrow-right"
+              style="font-size: 3rem; margin-right: 2rem"
+            ></i
+            >Let's Go!
+          </button>
+        </div>
+      </form>
+
+      <div class="background-page">
+        <img
+          src="background2.jpg"
+          class=""
+          alt=""
+          style="width: 40vw; height: 100vh"
+        />
+      </div>
+    </div>
+
+    <img
+      src="sleepy.png"
+      class="logo"
+      alt=""
+      style="
+        z-index: 2;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: -19.4%;
+        bottom: 0;
+        transform: scale(1);
+        height: 40vh;
+        width: 20vw;
+      "
+    />
+  </body>
+</html>
