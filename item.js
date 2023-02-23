@@ -56,7 +56,7 @@ allStars.forEach((star, i) => {
 
 const myDiv = document.getElementById("rating-color");
 
-const value = parseInt(document.getElementById("rating").innerText);
+const value = parseFloat(document.getElementById("rating").innerText);
 
 if ((value >= 0) & (value < 0.5)) {
   myDiv.style.backgroundColor = "#ff4141";
