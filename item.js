@@ -53,3 +53,29 @@ allStars.forEach((star, i) => {
     });
   };
 });
+
+const myDiv = document.getElementById("rating-color");
+
+const value = parseFloat(document.getElementById("rating").innerText);
+
+if ((value >= 0) & (value < 0.5)) {
+  myDiv.style.backgroundColor = "#ff4141";
+} else if ((value < 1) & (value >= 0.5)) {
+  myDiv.style.backgroundColor = "#ff6f6f";
+} else if ((value < 1.5) & (value >= 1)) {
+  myDiv.style.backgroundColor = "#ff6842";
+} else if ((value < 2) & (value >= 1.5)) {
+  myDiv.style.backgroundColor = "#ff8e42";
+} else if ((value < 2.5) & (value >= 2)) {
+  myDiv.style.backgroundColor = "#ffbd42";
+} else if ((value < 3) & (value >= 2.5)) {
+  myDiv.style.backgroundColor = "#ffe342";
+} else if ((value < 3.5) & (value >= 3)) {
+  myDiv.style.backgroundColor = "#dee943";
+} else if ((value < 4) & (value >= 3.5)) {
+  myDiv.style.backgroundColor = "#a1e943";
+} else if ((value < 4.5) & (value >= 4)) {
+  myDiv.style.backgroundColor = "#6ae943";
+} else if ((value <= 5) & (value >= 4.5)) {
+  myDiv.style.backgroundColor = "#37eb82";
+}

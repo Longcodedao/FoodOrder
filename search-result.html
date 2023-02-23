@@ -93,7 +93,7 @@
           <div style="margin-left: auto">
             <button data-modal-target="#modal" class="filter-button">
               <i class="fa fa-filter" style="padding-right: 0.5rem"></i>
-              <span style="font-weight: 500">Filter</span>
+              <span style="font-weight: 500; color:white; font-size:1.25rem">Filter</span>
             </button>
           </div>
         </div>
@@ -114,7 +114,7 @@
                 border-radius: 26px;
                 margin-top: -5.5rem;
                 margin-left: 10rem;
-              "
+              " class="rating-color"
             >
               <span
                 style="
@@ -124,8 +124,8 @@
                   position: absolute;
                   z-index: 4;
                   padding-left: 1.5rem;
-                "
-                >3.7</span
+                " class="rating"
+                >0.3</span
               >
             </div>
 
@@ -193,7 +193,7 @@
                 border-radius: 26px;
                 margin-top: -5.5rem;
                 margin-left: 10rem;
-              "
+              " class="rating-color"
             >
               <span
                 style="
@@ -203,8 +203,8 @@
                   position: absolute;
                   z-index: 4;
                   padding-left: 1.5rem;
-                "
-                >3.8</span
+                " class="rating"
+                >1.4</span
               >
             </div>
             <span class="result-box-title">Strawberry-filled Pie</span> <br />
@@ -273,7 +273,7 @@
                 border-radius: 26px;
                 margin-top: -5.5rem;
                 margin-left: 10rem;
-              "
+              " class="rating-color"
             >
               <span
                 style="
@@ -283,7 +283,7 @@
                   position: absolute;
                   z-index: 4;
                   padding-left: 1.5rem;
-                "
+                " class="rating"
                 >4.8</span
               >
             </div>
@@ -353,7 +353,7 @@
                 border-radius: 26px;
                 margin-top: -5.5rem;
                 margin-left: 10rem;
-              "
+              " class="rating-color"
             >
               <span
                 style="
@@ -363,7 +363,7 @@
                   position: absolute;
                   z-index: 4;
                   padding-left: 1.5rem;
-                "
+                " class="rating"
                 >4.6</span
               >
             </div>
@@ -431,7 +431,7 @@
                 border-radius: 26px;
                 margin-top: -5.5rem;
                 margin-left: 10rem;
-              "
+              " class="rating-color"
             >
               <span
                 style="
@@ -441,7 +441,7 @@
                   position: absolute;
                   z-index: 4;
                   padding-left: 1.5rem;
-                "
+                " class="rating"
                 >3.5</span
               >
             </div>
@@ -507,7 +507,7 @@
                 border-radius: 26px;
                 margin-top: -5.5rem;
                 margin-left: 10rem;
-              "
+              " class="rating-color"
             >
               <span
                 style="
@@ -517,7 +517,7 @@
                   position: absolute;
                   z-index: 4;
                   padding-left: 1.5rem;
-                "
+                " class="rating"
                 >4.2</span
               >
             </div>
@@ -586,27 +586,48 @@
         </div>
         <div class="filter-box-body">
           <form action="" style="font-size: 1.5rem; font-weight: 600">
-            <div style="padding-bottom: 1rem">
-              Popularity <br />
-              <input type="radio" id="popularity" name="sort-category" />
-              <label for="popularity">Highest First</label> <br />
-              <input type="radio" id="popularity" name="sort-category" />
-              <label for="popularity">Lowest First</label> <br />
+            <div style="display:flex">
+            <div class="card">
+              <input type="radio" name="sort-category" id="sort-rating-asc" />
+              <label for="sort-rating-asc">
+                <h5>Sort Rating Ascending</h5>
+                <div style="font-size:2rem; margin-left:2.5rem">
+                <i class="fas fa-star-half-alt"></i>
+                <i class="fas fa-sort-amount-up"></i>
+              </div>
+              </label>
             </div>
-            <div style="padding-bottom: 1rem">
-              Price <br />
-              <input type="radio" id="price" name="sort-category" />
-              <label for="price">Highest First</label><br />
-              <input type="radio" id="price" name="sort-category" />
-              <label for="price">Lowest First</label><br />
+            <div class="card">
+              <input type="radio" name="sort-category" id="sort-rating-desc" checked />
+              <label for="sort-rating-desc">
+                <h5>Sort Rating Descending</h5>
+                <div style="font-size:2rem; margin-left:2.5rem">
+                <i class="fas fa-star-half-alt"></i>
+                <i class="fas fa-sort-amount-down"></i>
+              </div>
+              </label>
             </div>
-            <div style="padding-bottom: 1rem">
-              Rating <br />
-              <input type="radio" id="rating" name="sort-category" />
-              <label for="rating">Highest First</label><br />
-              <input type="radio" id="rating" name="sort-category" />
-              <label for="rating">Lowest First</label><br />
+          </div>
+          <div style="display:flex">
+            <div class="card">
+              <input type="radio" name="sort-category" id="sort-price-asc" />
+              <label for="sort-price-asc">
+                <h5>Sort Price Ascending</h5>
+                <div style="font-size:2rem; margin-left:2.5rem">
+                  <i class="fas fa-dollar-sign"></i>                  <i class="fas fa-sort-amount-down"></i>
+                </div>
+                </label>
             </div>
+            <div class="card">
+              <input type="radio" name="sort-category" id="sort-price-desc" />
+              <label for="sort-price-desc">
+                <h5>Sort Price Descending</h5>
+                <div style="font-size:2rem; margin-left:2.5rem">
+                  <i class="fas fa-dollar-sign"></i>                  <i class="fas fa-sort-amount-down"></i>
+                </div>
+                </label>
+            </div>
+          </div>
             <input type="submit" value="Filter" class="submit-filter">
           </form>
         </div>
