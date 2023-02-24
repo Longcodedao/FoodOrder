@@ -1,0 +1,109 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model FoodOrder.ViewModels.Register
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Trip</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/signup.css" />
+    <link href="https://fonts.googleapis.com/css?family=Space+Grotesk&display=swap"
+          rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/c2ac5cb392.js"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form method="post" class="signup-form">
+            <div asp-validation-summary="All" class="text-danger">
+            </div>
+
+            <div class="heading-container" style="margin-left: 0.25rem">
+                <h1>Create an account</h1>
+                <p id="subheading">Sign in with your username and password</p>
+            </div>
+
+            <div class="main-container">
+                <label asp-for="EmailAddress">Your Email: </label>
+                <input type="email" placeholder="Email" asp-for="EmailAddress"
+                       class="input"
+                       required />
+                <span asp-validation-for="EmailAddress" class="text-danger"></span>
+
+                <label asp-for="Password">Your Password</label>
+                <input type="password" placeholder="Password" asp-for="Password" class="input"
+                       required />
+                <span asp-validation-for="Password" class="text-danger"></span>
+
+                <label asp-for="ConfirmPassword">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" asp-for="ConfirmPassword"
+                       required
+                       class="input"
+                       style="margin-bottom: 2.5rem" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+
+                <button type="submit" class="create-button">Create an account</button>
+                <p style="padding-top: 1rem">
+                    Already have an account? <a asp-action="Login1" asp-controller="Authorize">Sign in!</a>
+                </p>
+            </div>
+
+            @*<div class="box-break">or</div>
+
+            <button type="submit" class="sign-up-google">
+                <img src="google.png"
+                     alt=""
+                     width="28"
+                     height="28"
+                     class="google-image" />
+                Sign up via google
+            </button>
+            <p style="padding-top: 1rem">
+                Already have an account? <a href="#">Sign in!</a>
+            </p>*@
+        </form>
+
+        <div class="background-page">
+            <img src="~/Images/SignUp/dessert-background.png"
+                 class=""
+                 alt=""
+                 style="width: 40vw; height: 100vh" />
+        </div>
+    </div>
+
+    <img src="~/Images/SignUp/sleepy.png"
+         class="logo"
+         alt=""
+         style="
+        z-index: 2;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: -19.4%;
+        bottom: 0;
+        transform: scale(1);
+        height: 40vh;
+        width: 20vw;
+      " />
+</body>
+</html>
+

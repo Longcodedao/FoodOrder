@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProjectOOP\\FoodOrder\\FoodOrder.csproj": {}
+    "E:\\MVC_App\\FoodOrder\\FoodOrder\\FoodOrder.csproj": {}
   },
   "projects": {
-    "E:\\ProjectOOP\\FoodOrder\\FoodOrder.csproj": {
+    "E:\\MVC_App\\FoodOrder\\FoodOrder\\FoodOrder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjectOOP\\FoodOrder\\FoodOrder.csproj",
+        "projectUniqueName": "E:\\MVC_App\\FoodOrder\\FoodOrder\\FoodOrder.csproj",
         "projectName": "FoodOrder",
-        "projectPath": "E:\\ProjectOOP\\FoodOrder\\FoodOrder.csproj",
+        "projectPath": "E:\\MVC_App\\FoodOrder\\FoodOrder\\FoodOrder.csproj",
         "packagesPath": "C:\\Users\\volon\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjectOOP\\FoodOrder\\obj\\",
+        "outputPath": "E:\\MVC_App\\FoodOrder\\FoodOrder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\volon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,15 +40,35 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.12, )"
             }
           },
           "imports": [
@@ -70,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

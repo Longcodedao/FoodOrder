@@ -1,0 +1,79 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model FoodOrder.ViewModels.Login
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/signin.css">
+</head>
+
+<body>
+
+    <img src="~/Images/SignIn/Pie.png" alt="" id="sweetpie">
+    <img src="~/Images/SignUp/sleepy.png" alt="" id="logo">
+
+    <div class="background-header">
+        <h1>Sweet Trip</h1>
+        <p>Enjoy the sugar rush to your sugar powered brains</p>
+    </div>
+
+    <form method="post" id="login-menu">
+        <div class="heading-container">
+            <h2>Welcome Back</h2>
+            <p>Welcome back! Please enter your details</p>
+        </div>
+
+        <div asp-validation-summary="All" class="text-danger">
+        </div>
+
+        <div class="main-container">
+
+            <div class="login">
+
+               @* <div id="Google">
+                    <img src="~/Images/SignIn/Google.png" alt="" width="24" height="25">
+                    <p id="loginGoogle">Login in with Google</p>
+                </div>*@
+
+                <div class="mb-3">
+                    <label asp-for="Email"></label>
+                    <input class="input" type="text" placeholder="Enter Email"
+                            asp-for = "Email">
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="Password"></label>
+                    <input class="input" type="password" placeholder="Enter Password"
+                        asp-for = "Password">
+                </div>
+
+                 <div class="option-below mb-3">
+                    <div class="checkbox">
+                        <input type="checkbox" asp-for="RememberMe">
+                        <label asp-for="RememberMe" class="form-check-label">Remember Me</label>
+                    </div>
+                    @*<p><a href="forget-password.html">Forget the Password</a></p>*@
+                </div>
+                
+                <button type="submit" class="confirm">Login</button>
+            </div>
+            
+
+            <p id="signup">Don't have an account <a asp-action="Register1">Sign up for here</a></p>
+        </div>
+    </form>
+</body>
+</html>

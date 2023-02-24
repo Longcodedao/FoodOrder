@@ -1,0 +1,128 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e5c9df;
+    margin: 0;
+    padding: 0;
+}
+
+#sweetpie {
+    height: 100vh;
+    width: 45vw;
+}
+
+#logo {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 36vw;
+    top: 30vh;
+}
+
+.background-header {
+    color: white;
+    position: absolute;
+    top: 85vh;
+    margin-left: 50px;
+}
+
+    .background-header h1 {
+        font-size: 40px;
+    }
+
+/* Login-Menu decoration */
+#login-menu {
+    position: absolute;
+    width: 30vw;
+    height: 630px;
+    left: 60vw;
+    top: 15vh;
+    box-sizing: border-box;
+    background: #FBFAFA;
+    border: 3px solid #846060;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.login {
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+
+.heading-container h2 {
+    font-size: 30px;
+    letter-spacing: 0.05rem;
+    margin-bottom: -5px;
+}
+
+.heading-container p {
+    letter-spacing: 0.05rem;
+}
+
+#Google {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    border: 3px solid #D9D9D9;
+    border-radius: 50px;
+    padding: 0px;
+    margin: 25px 50px;
+}
+
+    #Google p {
+        font-weight: bold;
+    }
+
+.input {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 20px 20px 10px 0px;
+    border-radius: 10px;
+    width: 92%;
+}
+
+.option-below {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.confirm {
+    margin-top: 15px;
+    padding: 20px 36px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #DC3C70;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+
+#signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+    #signup a {
+        text-decoration: none;
+        color: black;
+    }
+
+        #signup a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }

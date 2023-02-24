@@ -1,0 +1,407 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+@model List<Product> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="~/css/search-resultx42x2.css" />
+    <title>Search Result</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c2ac5cb392.js"
+            crossorigin="anonymous"></script>
+    <script defer src="~/js/search-result21.js"></script>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="top-nav-left">
+            <div>
+                <a asp-action="Index" asp-controller="Home">
+                    <img src="~/Images/logo.png"
+                         alt=""
+                         style="
+              margin-left: 1.75rem;
+              width: 250px;
+              height: 250px;
+              display: inline-block;
+            " />
+                </a>
+                
+            </div>
+
+            <div class="heading">Sweet Trip</div>
+        </div>
+
+        <div style="width: 20%"></div>
+        <form action="@Url.Action("SearchBar", "Home")" method="get" id="my-form" id="my-form">
+
+            <input type="text"
+                       class="search-box"
+                       name="stringResult"
+                       placeholder="Enter the dessert you want to order" />
+                <button type="submit"
+                        id="search-button">
+                    <i class="fa fa-search"
+                       style="font-size: 1.5rem; font-weight: 600"></i>
+                </button>
+
+            <button asp-action="Index" asp-controller="Cart"
+                    class="cart-button"
+                    style="border: none; background-color: transparent; padding: none; ">
+                <img src="~/Images/HomePage/cart.png"
+                     alt=""
+                     style="
+            width: 3rem;
+            height: 3rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+          " />
+                @if ((bool)ViewData["ShowTempOrder"])
+                {
+                    @await Component.InvokeAsync("Item")
+                    ;
+                }
+
+            </button>
+
+            <button asp-action="Index" asp-controller="Profile" class="avatar-button"
+                    style="border: none; background-color: transparent; padding: none">
+                <img src="@ViewBag.ImageUrl"
+                     alt=""
+                     width="48" height="48"
+                     style="border: 3px solid blue; border-radius: 16px" />
+            </button>
+
+        </form>
+       
+    </div>
+
+    <div class="search-wrapper">
+        <div class="result">
+            <div style="margin-bottom: 1rem">
+                @ViewBag.Purpose for: "<span style="font-weight: 700">@ViewBag.Category</span>"
+            </div>
+            <div style="display: flex; flex-direction: row">
+                <div>
+                    <button class="result-button-main">@ViewBag.Category</button>
+                  
+                </div>
+                <div style="margin-left: auto">
+                    <button data-modal-target="#modal" class="filter-button">
+                        <i class="fa fa-filter" style="padding-right: 0.5rem"></i>
+                        <span style="font-weight: 700; color:white; font-size:1.25rem">Filter</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+
+
+        @for (int i = 0; i <= Model.Count / 3; i++)
+        {
+            <div class="result-row">
+            
+                @for (int j = 3 * i; j <= 3 * (i + 1) - 1; j++)
+                {
+                    if (j < Model.Count)
+                    {
+                        var Product = Model[j];
+                        @*<div class="result-box">
+                            <a asp-action="Index" asp-controller="Product" asp-route-id="@Product.Id">
+                                <img src="@Product.Image" alt="" class="result-box-image" />
+                                <div class="result-box-detail">
+                                    <div style="
+                                background-color: #d7e870;
+                                z-index: 1;
+                                position: absolute;
+                                width: 4.5rem;
+                                height: 5rem;
+                                border-radius: 26px;
+                                margin-top: -5.5rem;
+                                margin-left: 10rem;
+                            ">
+                                        <span style="
+                                        color: #3f3f3f;
+                                        font-weight: 900;
+                                        font-size: 3rem;
+                                        position: absolute;
+                                        z-index: 4;
+                                        padding-left: 1.5rem;
+                                    ">@Product.Rating</span>
+                                    
+                                    </div>
+
+                                    <span class="result-box-title">@Product.Name</span> <br />
+                                    <span class="result-box-ingre">@Product.Description</span>
+                                    <div class="result-description">
+                                        <div style="
+                                                float: left;
+                                                display: flex;
+                                                align-items: center;
+                                                padding-right: 2rem;
+                                                ">
+                                            <img src="~/Images/HomePage/price-tag.png"
+                                                alt=""
+                                                class="tag"
+                                                style="padding-right: 0.5rem" />
+                                            <span class="recommend-info">@Product.Price VND</span>
+                                        </div>
+                                        <div style="float: right; display: flex; align-items: center">
+                                            <img src="~/Images/HomePage/deliver-tag.png"
+                                                alt=""
+                                                class="tag"
+                                                style="padding-right: 0.5rem" />
+                                            <span class="recommend-info">@Product.DeliverMinutes Mins</span>
+                                        </div>
+                            
+                                        <div>
+                                            <button type="button"
+                                                    style="
+                                                        float: right;
+                                                        border: none;
+                                                        background: none;
+                                                        z-index: 2;
+                                                        position: absolute;
+                                                        padding-top: 2.5rem;
+                                                        padding-left: 1.5rem;
+                                                       ">
+                                                <img src="~/Images/HomePage/adding-button.png" alt="" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </a>
+                        </div>*@
+
+
+                        <div class="result-box">
+                            <a asp-action="Index" asp-controller="Product" asp-route-id="@Product.Id">
+                                <img src="@Product.Image" alt="" class="result-box-image" />
+                            </a>
+          <div class="result-box-detail">
+            <a asp-action="Index" asp-controller="Product" asp-route-id="@Product.Id">
+            <div
+              style="
+                background-color: #d7e870;
+                z-index: 1;
+                position: absolute;
+                width: 4.5rem;
+                height: 5rem;
+                border-radius: 26px;
+                margin-top: -5.5rem;
+                margin-left: 10rem;
+              "
+            class="rating-color">
+              <span
+                style="
+                  color: #3f3f3f;
+                  font-weight: 900;
+                  font-size: 3rem;
+                  position: absolute;
+                  z-index: 4;
+                  padding-left: 1.5rem;
+                "
+                class="rating">@Product.Rating</span
+              >
+            </div>
+
+            <span class="result-box-title">@Product.Name</span> <br />
+            <span class="result-box-ingre">@Product.Description</span>
+            </a>
+            <div class="result-description">
+                <a asp-action="Index" asp-controller="Product" asp-route-id="@Product.Id">
+              <div
+                style="
+                  float: left;
+                  display: flex;
+                  align-items: center;
+                  padding-right: 2rem;
+                "
+              >
+                <img src="~/Images/HomePage/price-tag.png"
+                  alt=""
+                  class="tag"
+                  style="padding-right: 0.5rem"
+                />
+                 <span class="recommend-info">@Product.Price VND</span>
+              </div>
+                    
+              <div style="float: right; display: flex; align-items: center">
+                <img src="~/Images/HomePage/deliver-tag.png"
+                  alt=""
+                  class="tag"
+                  style="padding-right: 0.5rem"
+                />
+                <span class="recommend-info">@Product.DeliverMinutes Mins</span>
+              </div>
+            </a>
+              <div>
+                  <a asp-action = "OrderNow" asp-controller="Product" asp-route-Productid = "@Product.Id">
+                      <button
+                  type="button"
+                  style="
+                    float: right;
+                    border: none;
+                    background: none;
+                    z-index: 2;
+                    position: absolute;
+                    padding-top: 2.5rem;
+                    padding-left: 1.5rem;
+                  "
+                  class="adding-button"
+                >
+                     <img src="~/Images/HomePage/adding-button.png" alt="" />
+                </button>
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+                    }
+                    
+                }
+
+            </div>
+            
+        }
+
+
+        <div class="modal" id="modal">
+            <div class="filter-box-header">
+                <span style="
+              padding-left: 2.5rem;
+              font-size: 2.5rem;
+              font-weight: 800;
+              color: white; ">Filter</span>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="filter-box-body">
+                <form method="post" style="font-size: 1.5rem; font-weight: 600">
+                    @*<div style="padding-bottom: 1rem">
+                        Popularity <br />
+                        <input type="radio" id="popularity" name="sort-category" />
+                        <label for="popularity">Highest First</label> <br />
+                        <input type="radio" id="popularity" name="sort-category" />
+                        <label for="popularity">Lowest First</label> <br />
+                    </div>  *@                 
+
+                    <input type="hidden" name="Categoryinp" value="@ViewBag.Category" />
+      
+
+                    @*<div style="padding-bottom: 1rem">
+                        Price <br />
+                        <input type="radio" id="price" name="sortPrice" value="1"/>
+                        <label for="price">Lowest First</label><br />
+                        <input type="radio" id="price" name="sortPrice" value="2" />
+                        <label for="price">Highest First</label><br />
+                    </div>*@
+
+                    @*<div style="padding-bottom: 1rem">
+                        Rating <br />
+                        <input type="radio" id="rating" name="sortPrice" value="3" />
+                        <label for="rating">Lowest First</label><br />
+                        <input type="radio" id="rating" name="sortPrice" value="4" />
+                        <label for="rating">Highest First</label><br />
+                        
+                    </div>*@
+
+                    <div style="display:flex">
+                        <div class="card">
+                            <input type="radio" name="sortPrice" id="sort-price-asc" value="1"/>
+                            <label for="sort-price-asc">
+                                <h5>Sort Price Ascending</h5>
+                                <div style="font-size:2rem; margin-left:2.5rem">
+                                    <i class="fas fa-dollar-sign"></i>                  <i class="fas fa-sort-amount-down"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="card">
+                            <input type="radio" name="sortPrice" id="sort-price-desc" value="2" />
+                            <label for="sort-price-desc">
+                                <h5>Sort Price Descending</h5>
+                                <div style="font-size:2rem; margin-left:2.5rem">
+                                    <i class="fas fa-dollar-sign"></i>                  <i class="fas fa-sort-amount-down"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div style="display:flex">
+                        <div class="card">
+                            <input type="radio" name="sortPrice" id="sort-rating-asc" value="3"/>
+                            <label for="sort-rating-asc">
+                                <h5>Sort Rating Ascending</h5>
+                                <div style="font-size:2rem; margin-left:2.5rem">
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-sort-amount-up"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="card">
+                            <input type="radio" name="sortPrice" id="sort-rating-desc" value="4" />
+                            <label for="sort-rating-desc">
+                                <h5>Sort Rating Descending</h5>
+                                <div style="font-size:2rem; margin-left:2.5rem">
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-sort-amount-down"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-box-end">
+                        <button data-close-button class="filter-submit-button" type="submit">
+                            Apply Sorting
+                        </button>
+                    </div>
+                    
+                </form>
+                
+            </div>
+
+            
+            
+        </div>
+
+        <div id="overlay"></div>
+
+        
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="footer-row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="row" style="color: white">
+                Sweet Trip Copyright © 2022 - All rights reserved
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

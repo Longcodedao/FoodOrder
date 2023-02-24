@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  foodorder:
+    image: ${DOCKER_REGISTRY-}foodorder
+    build:
+      context: .
+      dockerfile: FoodOrder/Dockerfile
+    ports:
+      - "5000:5000"

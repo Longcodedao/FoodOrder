@@ -1,0 +1,205 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+@model FoodOrder.ViewModels.ProfileViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Model.Name Profile</title>
+    
+    <link rel="stylesheet" href="~/css/userprofile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c2ac5cb392.js"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="top-nav-left">
+            <div>
+                <a asp-action="Index" asp-controller="Home">
+                    <img src="~/Images/SignUp/sleepy.png"
+                         alt=""
+                         style="
+                margin-left: 1.75rem;
+                width: 250px;
+                height: 250px;
+                display: inline-block;
+              " />
+                </a>
+            </div>
+
+            <div class="heading">Sweet Trip</div>
+        </div>
+
+        <div style="width: 20%"></div>
+        <form action="@Url.Action("SearchBar", "Home")" method="get" id="my-form">
+            <input type="text"
+                       class="search-box"
+                       name="stringResult"
+                       placeholder="Enter the dessert you want to order" />
+                <button type="submit"
+                        id="search-button">
+                    <i class="fa fa-search"
+                       style="font-size: 1.5rem; font-weight: 600"></i>
+                </button>
+
+            <button asp-action="Index" asp-controller="Cart"
+                    class="cart-button"
+                    style="border: none; background-color: transparent; padding: none">
+
+                <img src="~/Images/HomePage/cart.png"
+                     alt=""
+                     style="
+              width: 3rem;
+              height: 3rem;
+              padding-left: 2rem;
+              padding-right: 2rem;
+            " />
+
+                @if ((bool)ViewData["ShowTempOrder"])
+                {
+                    @await Component.InvokeAsync("Item")
+                    ;
+                }
+            </button>
+
+            <button class="avatar-button"
+                    style="border: none; background-color: transparent; padding: none">
+                <img src="@Model.ImageUrl"
+                width="48" height="48"
+                     alt=""
+                     style="border: 3px solid blue; border-radius: 16px" />
+            </button>
+        </form>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="wrapper-header">
+            <div style="transform: translate(8px, 4px); color: rgb(110, 41, 138)">
+                User Information
+            </div>
+        </div>
+        <div class="wrapper-body">
+            <div class="update-avatar">
+                <div>
+                    <div style="
+                margin-bottom: 2rem;
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: rgb(110, 41, 138);
+              ">
+                        Upload Profile Picture
+                    </div>
+                    <img src="@Model.ImageUrl" alt="" class="avatar-img" />
+                </div>
+                <div style="margin-left: 4rem">
+
+                    <div style="margin-bottom: 1rem; color: rgb(110, 41, 138)">
+                        Upload your profile picture (JPEG, PNG only)
+                    </div>
+
+
+                    <form method="post" action="@Url.Action("SubmitImage", "Profile")" enctype="multipart/form-data">
+                        <input asp-for="@Model.Image" class="form-control"  />
+
+                        <input type="submit" value="Update" class="submit-button" />
+                    </form>
+
+                </div>
+            </div>
+
+            <hr style="
+                transform: scale(0.93);
+                border-radius: 3px;
+                border-top: solid 2 rgb(109, 109, 110);" />
+
+
+            <div class="update-info">
+                <div style="
+              font-size: 1.25rem;
+              font-weight: 600;
+              color: rgb(140, 52, 175);
+            ">
+                    Change Personal Information
+                </div>
+                <div class="update-info-wrapper">
+                    <form method="post" action="@Url.Action("SubmitInformation", "Profile")">
+                        <div style="margin: 2rem 0">
+                            Name
+                            <input asp-for="@Model.Name"
+                                   placeholder="Name:...."
+                                   class="user-info-change" />
+                        </div>
+
+                        <div style="margin: 2rem 0">
+                            Address
+                            <input asp-for="@Model.Address"
+                                   placeholder="Address:...."
+                                   class="user-info-change" />
+                        </div>
+
+                        <div style="margin: 2rem 0">
+                            Postal Code
+                            <input asp-for = "@Model.PostalCode"
+                                   placeholder="Postal Code:...."
+                                   class="user-info-change" />
+                        </div>
+
+                        <div style="margin: 2rem 0">
+                            Phone number
+                            <input asp-for = "@Model.PhoneNumber"
+                                   placeholder="Phone number:...."
+                                   class="user-info-change" />
+                        </div>
+                        
+                        <input type="submit"
+                               value="Update personal info"
+                               class="submit-button"
+                               style="transform: translateX()" />
+                    </form>
+                </div>
+
+                <a asp-area="" asp-action="Logout" asp-controller="Authorize">
+                    <button class="log-out-button">
+                        Log Out <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="footer-row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="row" style="color: white">
+                Sweet Trip Copyright © 2022 - All rights reserved
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

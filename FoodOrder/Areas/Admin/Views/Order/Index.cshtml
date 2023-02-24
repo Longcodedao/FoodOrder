@@ -1,0 +1,102 @@
+﻿@model IEnumerable<FoodOrder.Models.OrderHeader>
+
+
+
+<h1 class="mt-5 mb-2">List Of Orders</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.AddressReceive)
+             </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.BillTotal)
+            </th>
+            
+     
+            <th>
+                @Html.DisplayNameFor(model => model.ShopOptions)
+            </th>
+            
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressReceive)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderDate)
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.BillTotal)
+            </td>
+            
+            @switch(item.ShopOptions) {
+                case FoodOrder.Models.shoppingOptions.Basic: 
+                    <th>
+                        Basic
+                    </th>
+                    break;
+
+                case FoodOrder.Models.shoppingOptions.Standard: 
+                    <th>
+                        Standard
+                    </th>
+                    break;
+
+                case FoodOrder.Models.shoppingOptions.Premium: 
+                    <th>
+                        Premium
+                    </th>
+                    break;
+            }
+            
+
+            <td>
+                 <a class="btn btn-info mr-1" asp-area="Admin"
+                 asp-action="Details" asp-controller="Order" asp-route-id="@item.Id">Detail</a>
+
+             </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+

@@ -1,0 +1,117 @@
+﻿@model FoodOrder.ViewModels.OrderViewModelAdmin
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="bg-info text-white text-center
+            p-2 mt-5 mb-2">
+    Details
+</h1>
+
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2 mb-2">
+            @Html.DisplayNameFor(model => model.OrderHeader.Id)
+        </dt>
+        <dd class="col-sm-10 mb-2">
+            @Html.DisplayFor(model => model.OrderHeader.Id)
+        </dd>
+
+        <dt class="col-sm-2 mb-2">
+            @Html.DisplayNameFor(model => model.OrderHeader.Name)
+        </dt>
+        <dd class="col-sm-10 mb-2">
+            @Html.DisplayFor(model => model.OrderHeader.Name)
+        </dd>
+
+        <dt class="col-sm-2 mb-2">
+            @Html.DisplayNameFor(model => model.OrderHeader.Phone)
+        </dt>
+        <dd class="col-sm-10 mb-2">
+            @Html.DisplayFor(model => model.OrderHeader.Phone)
+        </dd>
+
+        <dt class="col-sm-2 mb-2">
+            @Html.DisplayNameFor(model => model.OrderHeader.AddressReceive)
+        </dt>
+        <dd class="col-sm-10 mb-2">
+            @Html.DisplayFor(model => model.OrderHeader.AddressReceive)
+        </dd>
+
+        
+        <dt class="col-sm-2 mb-2">
+            @Html.DisplayNameFor(model => model.OrderHeader.OrderDate)
+        </dt>
+        <dd class="col-sm-10 mb-2">
+            @Html.DisplayFor(model => model.OrderHeader.OrderDate)
+        </dd>
+
+
+        <dt class="col-sm-2 mb-2">
+            @Html.DisplayNameFor(model => model.OrderHeader.ShopOptions)
+        </dt>
+        @switch (Model.OrderHeader.ShopOptions)
+        {
+            case FoodOrder.Models.shoppingOptions.Basic:
+                <dd class="col-sm-10 mb-2">
+                    Basic
+                </dd>
+                break;
+
+            case FoodOrder.Models.shoppingOptions.Standard:
+                <dd class="col-sm-10 mb-2">
+                     Standard
+                </dd>
+                break;
+
+            case FoodOrder.Models.shoppingOptions.Premium:
+                <dd class="col-sm-10 mb-2">
+                     Premium
+                </dd>
+                break;
+        }
+    </dl>
+    <hr />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product's Name</th>
+                <th>Number of Items</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var cart in Model.Carts)
+            {
+                <tr>
+                    <td>@cart.Product.Name</td>
+                    <td>@cart.Count</td>
+                    <td>@cart.Product.Price</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+       
+    <hr />
+
+    <dl class="row">
+        <dt class="col-sm-2 mb-2">
+            @Html.DisplayNameFor(model => model.OrderHeader.BillTotal)
+        </dt>
+        <dd class="col-sm-10 mb-2">
+            @Html.DisplayFor(model => model.OrderHeader.BillTotal)
+        </dd>
+    </dl>
+    
+</div>
+<div>
+    <a class="btn btn-outline-info p-2" asp-action="Index">Back</a>
+    <a class="btn btn-outline-primary p-2" asp-action="ConfirmOrder" 
+                        asp-action="Order" 
+                        asp-route-id="@Model.OrderHeader.Id">Confirm Order</a>
+</div>

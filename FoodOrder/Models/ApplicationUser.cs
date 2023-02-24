@@ -1,13 +1,19 @@
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace FoodOrder.Models {
-    public class ApplicationUser: IdentityUser {
-
-        public string Name {get; set;} = string.Empty;
-        public string Phone {get; set;}
-        public string City {get; set;} = string.Empty;      
-        public string Address {get; set;} = string.Empty;
-
-        public string PostalCode {get; set;} = string.Empty;
+namespace FoodOrder.Models
+{
+    public class ApplicationUser : IdentityUser
+    {
+        public string UserProfileImage { get; set; }
+        public string Name { get; set; }
+        public string City { get; set; }
+        public string Address { get; set; } 
+        public string PostalCode { get;set; }
     }
 }

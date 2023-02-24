@@ -1,0 +1,68 @@
+﻿@model IEnumerable<FoodOrder.ViewModels.ProductViewModel>
+
+<body>
+
+    <h1 class="mt-5 mb-2">List Of Products</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryId)
+            </td>
+            <td>
+                        @Html.DisplayFor(modelItem => item.Rating)/5 <i class="fas fa-star"></i>
+            </td>
+            <td>
+                         <a class="btn btn-info mr-1" asp-area="Admin" 
+                                    asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">Detail</a> 
+                          <a class="btn btn-warning mr-1" asp-area="Admin" 
+                                    asp-action="Edit" asp-controller="Product" asp-route-id="@item.Id">Edit</a> 
+                         <a class="btn btn-danger mr-1" asp-area="Admin" 
+                                            asp-action="Delete" asp-controller="Product" asp-route-id="@item.Id">Delete</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+    <a class="btn btn-primary p-2 mt-5" asp-area="Admin"
+       asp-action="Create" asp-controller="Product">Create New Product</a>
+</body>
+</html>

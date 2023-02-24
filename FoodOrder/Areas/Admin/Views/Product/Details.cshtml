@@ -1,0 +1,75 @@
+﻿@model FoodOrder.ViewModels.ProductViewModel
+
+<body>
+
+<div>
+    <h4 class= "bg-info text-white text-center 
+            p-2 mt-5 mb-2">@Model.Title</h4>
+    <hr />
+
+    <div>
+        <img src = "@ViewBag.Image" class="text-center mb-5" width = "400" height="300"/>
+    </div>
+
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+
+         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category.Title)
+        </dd>
+
+        <dt class = "col-sm-2">
+            Deliver Minutes: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DeliverMinutes)
+        </dd>
+
+            <dt class="col-sm-2">
+                Rating:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Rating)
+            </dd>
+    </dl>
+</div>
+<div>
+ 
+    <a class="btn btn-outline-info p-2" asp-action="Index">Back to List</a>
+     
+      
+    
+</div>
+</body>

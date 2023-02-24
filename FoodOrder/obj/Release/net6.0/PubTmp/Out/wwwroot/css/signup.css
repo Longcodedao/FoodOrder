@@ -1,0 +1,149 @@
+﻿body {
+    font-family: "Manrope", sans-serif;
+    background-color: #e5c9df;
+}
+
+.logo {
+    margin: auto;
+    display: block;
+}
+
+.box-break {
+    margin: auto;
+    padding: 1rem 0;
+    font-size: 20px;
+    color: #7a7a7a;
+}
+
+.create-button {
+    background-color: #915d85;
+}
+
+button {
+    padding: 20px 36px;
+    width: 100%;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+}
+
+.input {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 1.5rem 0;
+    border-radius: 30px;
+    width: 92%;
+    border-color: #e0e0e0;
+    border-width: 3px;
+    border: none;
+    height: 3rem;
+}
+
+.sign-up-google {
+    width: 100%;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    border: solid #d9d9d9 4px;
+}
+
+footer {
+    margin-top: 10rem;
+}
+
+.footer {
+    padding: 30px 0px;
+    text-align: center;
+    background-color: #664330;
+    width: 100%;
+}
+
+    .footer .footer-row {
+        width: 100%;
+        margin: 1% 0%;
+        padding: 0.6% 0%;
+        color: gray;
+        font-size: 0.8em;
+    }
+
+        .footer .footer-row a {
+            text-decoration: none;
+            color: gray;
+            transition: 0.5s;
+        }
+
+            .footer .footer-row a:hover {
+                color: #fff;
+            }
+
+        .footer .footer-row ul li {
+            display: inline-block;
+            margin: 0px 30px;
+        }
+
+        .footer .footer-row a i {
+            font-size: 2em;
+            margin: 0% 1%;
+        }
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+        .footer .footer-row ul li {
+            display: block;
+            margin: 10px 0px;
+            text-align: left;
+        }
+
+        .footer .footer-row a i {
+            margin: 0% 3%;
+        }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    position: fixed;
+    margin-top: 3rem;
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 50px;
+    border: 3px solid #846060;
+    padding: 40px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.create-button:hover {
+    background-color: #502547;
+}
+
+.sign-up-google:hover {
+    background-color: #f0f0f0;
+}
+
+.signup-form {
+    transform: scale(0.9);
+    margin-left: 20rem;
+}
+
+.google-image {
+    transform: translateY(0.2rem);
+    padding-right: 0.5rem;
+}
+
+.background-page {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

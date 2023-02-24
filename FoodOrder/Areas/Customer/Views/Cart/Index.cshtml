@@ -1,0 +1,364 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+@model FoodOrder.ViewModels.CartViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Schedule Order</title>
+    <link rel="stylesheet" href="~/css/schedule-order.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c2ac5cb392.js"
+            crossorigin="anonymous"></script>
+    <script defer src="~/js/schedule-order.js"></script>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="top-nav-left">
+            <div>
+                <a asp-action ="Index" asp-controller="Home">
+                    <img src="~/Images/SignUp/sleepy.png"
+                         alt=""
+                         style="width: 250px; height: 250px; display: inline-block" />
+                </a>
+            </div>
+
+            <div class="heading">Sweet Trip</div>
+        </div>
+        <div style="width: 20%"></div>
+
+        <form action="" id="my-form">
+            <input type="text"
+                   class="search-box"
+                   placeholder="Enter the dessert you want to order" />
+            <button id="search-button">
+                <i class="fa fa-search"
+                   style="font-size: 1.5rem; font-weight: 600"></i>
+            </button>
+            <button asp-action="Index" asp-controller="Cart"
+                    class="cart-button"
+                    style="border: none; background-color: transparent; padding: none">
+                <img src="~/Images/HomePage/cart.png"
+                     alt=""
+                     style="
+              width: 3rem;
+              height: 3rem;
+              padding-left: 2rem;
+              padding-right: 2rem;
+            " />
+
+                     @if ((bool)ViewData["ShowTempOrder"])
+                {
+                    @await Component.InvokeAsync("Item")
+                    ;
+                }
+            </button>
+            <button asp-action="Index" asp-controller="Profile"
+                    class="avatar-button"
+                    style="border: none; background-color: transparent; padding: none">
+                <img src="@ViewBag.ImageUrl"
+                     alt=""
+                     width="48" height="48"
+                     style="border: 3px solid blue; border-radius: 16px" />
+            </button>
+        </form>
+    </div>
+
+    <div class="checkout-section">
+        <div class="checkout-left">
+            <div class="checkout-header">Secure Checkout</div>
+
+            <div class="delivery-address-section">
+                <div class="deliver-address-header">
+                    <i class="fas fa-map-marker-alt"
+                       style="color: #e07ea1; padding-right: 1rem; font-size: 1.75rem"></i>Delivery Address
+                </div>
+
+                <div class="delivery-address-wrapper">
+                    <form action="@Url.Action("SubmitAddress", "Cart")" method="post" class="address-form">
+                        <div class="delivery-address-box">
+                            <i class="fas fa-map-marker-alt"
+                               style="color: white; font-size: 2rem"></i>
+
+                            <textarea asp-for="@Model.OrderHeader.AddressReceive"
+                                      cols="30"
+                                      rows="10"
+                                      placeholder="Enter your address: "
+                                      class="address-input"></textarea>
+                            <input type="submit" value="Submit Address!">
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="packaging-section">
+                <div class="packaging-header">
+                    <i class="fas fa-box"
+                       style="color: #e07ea1; padding-right: 1rem; font-size: 1.75rem"></i>Packaging Choice
+                </div>
+                <form action="@Url.Action("SubmitOptions", "Cart")" method="post" class="packing-choice-form">
+                    <div class="packaging-choices-row">
+                        <div class="card">
+                            <input type="radio" asp-for="@Model.OrderHeader.ShopOptions" value="Basic" id="card1" />
+                            <label for="Basic">
+                                <h5>BASIC</h5>
+                                <h2>
+                                    <span>VND</span>
+                                    8000
+                                </h2>
+                                <img src="~/Images/ShoppingCart/paper-packaging.jpg" alt="" class="package-img" />
+                            </label>
+                        </div>
+                        <div class="card">
+                            <input type="radio" asp-for="@Model.OrderHeader.ShopOptions" value="Standard" id="card2" />
+                            <label for="card2">
+                                <h5>Standard</h5>
+                                <h2>
+                                    <span>VND</span>
+                                    12000
+                                </h2>
+                                <img src="~/Images/ShoppingCart/plastic-packaging.jpg" alt="" class="package-img" />
+                            </label>
+                        </div>
+                        <div class="card">
+                            <input type="radio" asp-for="@Model.OrderHeader.ShopOptions" value="Premium" id="card3" />
+                            <label for="card3">
+                                <h5>PREMIUM</h5>
+                                <h2>
+                                    <span>VND</span>
+                                    18000
+                                </h2>
+                                <img src="~/Images/ShoppingCart/aluminium-packaging.jpg"
+                                     alt=""
+                                     class="package-img" />
+                            </label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Confirm packing choice!">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="item-count-box">
+            <div style="display: inline-block; font-size: 1.5rem; font-weight: 600">
+                Cart
+            </div>
+            <div style="float: right; font-weight: 400">
+                <span class="item-count">@Model.OrderHeader.NumItems</span> items
+            </div>
+        </div>
+
+        @foreach(var cart in Model.ListOfCart)
+        {
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <div class="cart-item-name">@cart.Product.Name</div>
+                    <div style="color: #808080" class="cart-item-price-container">
+                        <span class="cart-item-price">@cart.Product.Price</span>VND
+                    </div>
+                </div>
+                <div class="cart-item-quantity-wrapper">
+
+                    <a asp-action="DecreaseProduct"
+                        asp-controller="Cart"
+                        asp-route-Cartid="@cart.Id">
+
+                        <button class="decrease-button">
+
+
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </a>
+                    
+
+                    <span class="cart-item-quantity">@cart.Count</span>
+
+                    
+                    <a asp-action="AddProduct"
+                   asp-controller="Cart"
+                   asp-route-Cartid="@cart.Id">
+
+                        <button class="increase-button">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+        }
+
+        
+
+        
+        <div class="bill-detail">
+            <div>Bill Detail</div>
+            <div class="item-total-wrapper">
+                <div>Item Total</div>
+                <div class="item-total-number">@Model.OrderHeader.OrderTotal<span>VND</span></div>
+            </div>
+            <div class="packaging-total-wrapper">
+                @{
+                    var ShopOptionsChoice = Model.OrderHeader.ShopOptions;
+                }
+                @switch (ShopOptionsChoice)
+                {
+                    case FoodOrder.Models.shoppingOptions.Basic:
+                        <div id="packaging-choice-cart">Basic Packaging</div>
+                        <div class="item-total-number"> @Model.OrderHeader.PackingMoney <span>VND</span></div>
+                        break;
+
+                    case FoodOrder.Models.shoppingOptions.Standard:
+                        <div id="packaging-choice-cart">Standard Packaging</div>
+                        <div class="item-total-number"> @Model.OrderHeader.PackingMoney <span>VND</span></div>
+                        break;
+
+                    case FoodOrder.Models.shoppingOptions.Premium:
+                        <div id="packaging-choice-cart">Basic Packaging</div>
+                        <div class="item-total-number"> @Model.OrderHeader.PackingMoney<span>VND</span></div>
+                        break;
+                }
+                
+            </div>
+
+            
+        </div>
+
+        <div class="subtotal-wrapper">
+            <div class="subtotal-head">Total</div>
+            <div class="subtotal-number-wrapper"> @(Model.OrderHeader.PackingMoney + Model.OrderHeader.OrderTotal)VND</div>
+        </div>
+        <div style="color: #808080; font-size: 0.75rem">
+            Extra charges may apply
+        </div>
+
+        
+           <button
+            data-modal-target="#modal"
+            type="submit"
+            class="checkout-button"
+            >Proceed to Payment
+            </button>
+        
+        
+    </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="checkout-modal-header">
+            <span style="
+            color: white;
+            font-weight: 600;
+            font-size: 2.5rem;
+            padding: 1.5rem;
+          ">Checkout</span>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+
+        <div class="checkout-modal-body">
+            <div style="font-size: 1.5rem; font-weight: 600; margin-left: 1rem">
+                Payment Method
+            </div>
+            <div class="payment-method-wrap">
+                <div class="payment-method">
+                    <input type="radio" name="method" id="method1" />
+                    <label for="method1">
+                        <img src="~/Images/ShoppingCart/mastercard.png" alt="" class="payment-img" />
+                    </label>
+                </div>
+
+                <div class="payment-method">
+                    <input type="radio" name="method" id="method2" />
+                    <label for="method2">
+                        <img src="~/Images/ShoppingCart/visa.jpg" alt="" class="payment-img" />
+                    </label>
+                </div>
+
+                <div class="payment-method">
+                    <input type="radio" name="method" id="method3" />
+                    <label for="method3">
+                        <img src="~/Images/ShoppingCart/paypal.png" alt="" class="payment-img" />
+                    </label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" name="method" id="method4" />
+                    <label for="method4">
+                        <img src="~/Images/ShoppingCart/cash.png" alt="" class="payment-img" />
+                    </label>
+                </div>
+            </div>
+
+            <input type="text"
+                   class="payment-input"
+                   placeholder="Enter your name on card"
+                   id="name"
+                   style="margin-top: 2rem" />
+            <input type="text"
+                   class="payment-input"
+                   placeholder="Enter card number"
+                   id="card-number" />
+            <div style="display: flex; margin-bottom: 2rem">
+                <input type="text"
+                       class="payment-input"
+                       placeholder="Expiration date"
+                       id="expiration-date"
+                       style="width: 45%; margin-right: 1rem" />
+                <input type="text"
+                       class="payment-input"
+                       placeholder="CVV"
+                       id="cvv"
+                       style="width: 40%" />
+            </div>
+            <div class="total-bill">
+                <div>Total(Tax included)</div>
+                <div style="margin-left: auto; font-weight: 600">
+                    <span class="total-number"
+                          style="font-size: 1.5rem; color: black; font-weight: 600">@(Model.OrderHeader.PackingMoney + Model.OrderHeader.OrderTotal) VND</span>
+                    VND
+                </div>
+            </div>
+            <a asp-action="Finish" asp-controller="Cart">
+                <button class="payment-button" type="submit">
+                    Complete Payment
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="footer-row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="row" style="color: white">
+                Sweet Trip Copyright © 2022 - All rights reserved
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

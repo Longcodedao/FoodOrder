@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Completed</title>
+    <link rel="stylesheet" href="~/css/payment-complete.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c2ac5cb392.js"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <i class="fas fa-check-circle"
+           style="color: rgb(4, 160, 4); font-size: 10rem"></i>
+        <div style="font-size: 4rem; color: rgb(4, 160, 4); margin: 2rem">
+            Payment is successful
+        </div>
+        <div style="font-size: 1.5rem; color: rgb(122, 115, 115)">
+            Thank you! Your payment is completed
+        </div>
+        <div style="font-size: 1.5rem; color: rgb(122, 115, 115)">
+            Your order have been processed and the desserts will be delivered to you
+            promptly
+        </div>
+        <a asp-action="Index" asp-controller="Home">
+            <button>DONE</button>
+            </a>
+    </div>
+</body>
+</html>
+

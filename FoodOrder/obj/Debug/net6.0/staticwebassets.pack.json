@@ -1,0 +1,801 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FoodOrder.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FoodOrder.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Account\\5c4a067e-0921-4a48-a706-01e9ae0cdf32-counterterrorist.jpg",
+      "PackagePath": "staticwebassets\\Images\\Account\\5c4a067e-0921-4a48-a706-01e9ae0cdf32-counterterrorist.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Account\\7d85adb6-6e3b-4c70-a13e-49fbcc4a7344-counterterrorist.jpg",
+      "PackagePath": "staticwebassets\\Images\\Account\\7d85adb6-6e3b-4c70-a13e-49fbcc4a7344-counterterrorist.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Account\\a90fd0a9-e8af-4c3d-b2b3-12b32ee53d36-counterterrorist.jpg",
+      "PackagePath": "staticwebassets\\Images\\Account\\a90fd0a9-e8af-4c3d-b2b3-12b32ee53d36-counterterrorist.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Account\\fb8c712e-3ac7-4c5d-9158-ff7ab1345216-Terriorist.png",
+      "PackagePath": "staticwebassets\\Images\\Account\\fb8c712e-3ac7-4c5d-9158-ff7ab1345216-Terriorist.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Account\\ff70705a-e7fc-4175-a08e-9380863ed575-Terriorist.png",
+      "PackagePath": "staticwebassets\\Images\\Account\\ff70705a-e7fc-4175-a08e-9380863ed575-Terriorist.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Account\\profile-gray.jpg",
+      "PackagePath": "staticwebassets\\Images\\Account\\profile-gray.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Category\\328aa241-9726-4f6a-80f0-4bc1caa25c70-icecream2.png",
+      "PackagePath": "staticwebassets\\Images\\Category\\328aa241-9726-4f6a-80f0-4bc1caa25c70-icecream2.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Category\\416d004c-2b1c-484c-a39d-6c2cfedf9df0-Pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Category\\416d004c-2b1c-484c-a39d-6c2cfedf9df0-Pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Category\\49a9c86d-de7e-4d1b-ad45-9e802205a02f-pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\Category\\49a9c86d-de7e-4d1b-ad45-9e802205a02f-pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Category\\7bbcfe56-4dd1-40ac-8d3c-ea0b2023de7a-Cookies.webp",
+      "PackagePath": "staticwebassets\\Images\\Category\\7bbcfe56-4dd1-40ac-8d3c-ea0b2023de7a-Cookies.webp"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Category\\d7c2a044-3e7e-4697-871a-772d818639e1-birthdaycake2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Category\\d7c2a044-3e7e-4697-871a-772d818639e1-birthdaycake2.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Category\\eb0a8231-c7ea-4d76-8b24-0434704712bf-Cookies.webp",
+      "PackagePath": "staticwebassets\\Images\\Category\\eb0a8231-c7ea-4d76-8b24-0434704712bf-Cookies.webp"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Category\\f7bc3671-9607-4b3f-b4af-82fdb619ce34-candy.jpg",
+      "PackagePath": "staticwebassets\\Images\\Category\\f7bc3671-9607-4b3f-b4af-82fdb619ce34-candy.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\adding-button.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\adding-button.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\background2.jpg",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\background2.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\birthdaycake2.jpg",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\birthdaycake2.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\break-reindeers.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\break-reindeers.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\candy.jpg",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\candy.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\cart.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\cart.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\christmas-wreith.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\christmas-wreith.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\cookies2.jpg",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\cookies2.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\cupcake.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\cupcake.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\decor1.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\decor1.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\decor2.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\decor2.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\deliver-tag.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\deliver-tag.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\icecream.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\icecream.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\icecream2.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\icecream2.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\introimage.jpg",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\introimage.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\introimage2.jpg",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\introimage2.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\price-tag.png",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\price-tag.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\HomePage\\pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\HomePage\\pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\030636c4-8b9d-4b82-8f5a-5eb00646d1cd-Strawberry-CheeseCake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\030636c4-8b9d-4b82-8f5a-5eb00646d1cd-Strawberry-CheeseCake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\06b785d2-ff91-44aa-8811-d39bf51b3dab-Gummies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\06b785d2-ff91-44aa-8811-d39bf51b3dab-Gummies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\07d5a33e-0cc9-435d-adf3-862328a4c0f9-Candy-Cane.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Product\\07d5a33e-0cc9-435d-adf3-862328a4c0f9-Candy-Cane.jpeg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\07ead516-02a7-4805-a7ce-822b28dfcf75-Pecan-Pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\07ead516-02a7-4805-a7ce-822b28dfcf75-Pecan-Pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\08b274cf-ae1f-479f-ae87-2c6cb3997a2f-Chocolate-Peanut-Butter-Bars.webp",
+      "PackagePath": "staticwebassets\\Images\\Product\\08b274cf-ae1f-479f-ae87-2c6cb3997a2f-Chocolate-Peanut-Butter-Bars.webp"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\0aaa44e5-eba8-429c-8b58-bcfafa8d3920-GingerSnaps.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\0aaa44e5-eba8-429c-8b58-bcfafa8d3920-GingerSnaps.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\0fa31c7e-200e-4ca0-83bb-2422d632e841-Candy-Cane.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Product\\0fa31c7e-200e-4ca0-83bb-2422d632e841-Candy-Cane.jpeg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\14734011-328e-4ec7-8b31-9780dc589738-Pumpkin-Pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\14734011-328e-4ec7-8b31-9780dc589738-Pumpkin-Pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\1494091b-f2d7-4c72-95a4-c9bca3d7ffe9-Pecan-Pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\1494091b-f2d7-4c72-95a4-c9bca3d7ffe9-Pecan-Pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\1a5068a3-6fb9-4d09-a499-4b2d0bbbee44-Blueberry-Sorbet.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\1a5068a3-6fb9-4d09-a499-4b2d0bbbee44-Blueberry-Sorbet.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\1c081971-05df-468e-ab2d-054d3bfcdc48-Fortune-cookies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\1c081971-05df-468e-ab2d-054d3bfcdc48-Fortune-cookies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\1deca10e-18df-41f5-b06b-26c94981350a-Fortune-cookies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\1deca10e-18df-41f5-b06b-26c94981350a-Fortune-cookies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\258fdb0f-098e-406e-9bc7-7402ea0cf4bc-Peach-Pie.jfif",
+      "PackagePath": "staticwebassets\\Images\\Product\\258fdb0f-098e-406e-9bc7-7402ea0cf4bc-Peach-Pie.jfif"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\26bd878f-621b-4213-8c4b-1016b68ea849-Matcha-Ice-Cream.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\26bd878f-621b-4213-8c4b-1016b68ea849-Matcha-Ice-Cream.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\3637863b-1e41-439e-8279-f10c82bdbd87-Banana-Pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\3637863b-1e41-439e-8279-f10c82bdbd87-Banana-Pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\3880333d-a909-4c37-8997-67d6f318b80c-Toffee-Rice-Pudding(2).jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\3880333d-a909-4c37-8997-67d6f318b80c-Toffee-Rice-Pudding(2).jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\3c4200ab-f533-4d7b-974c-ef385044b6f6-Key-Lime-Pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\3c4200ab-f533-4d7b-974c-ef385044b6f6-Key-Lime-Pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\3f8c60f3-0d1a-4668-b96c-8dd69fdd67ed-Flan.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\3f8c60f3-0d1a-4668-b96c-8dd69fdd67ed-Flan.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\40af3efc-ce3d-4010-aceb-c65a1429c9d5-Brigadeiro.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\40af3efc-ce3d-4010-aceb-c65a1429c9d5-Brigadeiro.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\411db896-06d9-4f18-8b3b-ba5e146adcbe-Pumpkin-Pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\411db896-06d9-4f18-8b3b-ba5e146adcbe-Pumpkin-Pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\42a25925-5c2e-4e77-a8ec-2f73df187d26-Matcha-Ice-Cream.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\42a25925-5c2e-4e77-a8ec-2f73df187d26-Matcha-Ice-Cream.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\44c8c724-1b74-40d1-bfbb-0a97bef2b8b5-Pound-Cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\44c8c724-1b74-40d1-bfbb-0a97bef2b8b5-Pound-Cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\457bdb85-b365-4216-9619-edf9205154ef-Sponge-Cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\457bdb85-b365-4216-9619-edf9205154ef-Sponge-Cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\47f99f71-d30a-4ad1-8fb5-d3a99eafa43f-GingerSnaps.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\47f99f71-d30a-4ad1-8fb5-d3a99eafa43f-GingerSnaps.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\4839c7cf-1be4-43ab-ae70-bc1065effe2e-Lemon-meringue-pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\4839c7cf-1be4-43ab-ae70-bc1065effe2e-Lemon-meringue-pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\5224c00b-e83f-4394-bffb-619d85acb440-pistachio-nougat.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\5224c00b-e83f-4394-bffb-619d85acb440-pistachio-nougat.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\66a9f5d3-7752-4a88-a8b7-f128f3a5d1dc-Vanilla-Ice-Cream.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\66a9f5d3-7752-4a88-a8b7-f128f3a5d1dc-Vanilla-Ice-Cream.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\68665b5c-6dd2-4a8d-8837-cf50020e7b81-Shortbread-cookies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\68665b5c-6dd2-4a8d-8837-cf50020e7b81-Shortbread-cookies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\699b511e-ef77-4cf3-a978-5e57dcf72a10-Brigadeiro.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\699b511e-ef77-4cf3-a978-5e57dcf72a10-Brigadeiro.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\6b3a94ca-2bb5-4545-8a15-2ef4562dd7d7-Black-forest-cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\6b3a94ca-2bb5-4545-8a15-2ef4562dd7d7-Black-forest-cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\6d6a77d0-714a-4c94-938d-6cb1f89b9284-Lemon-meringue-pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\6d6a77d0-714a-4c94-938d-6cb1f89b9284-Lemon-meringue-pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\7192c943-1b6c-4282-9496-e4db922e63b9-Chocolate-Madness-Sundaejpg.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\7192c943-1b6c-4282-9496-e4db922e63b9-Chocolate-Madness-Sundaejpg.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\72a9b685-bd50-4595-9022-6c8d58351120-Strawberry-CheeseCake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\72a9b685-bd50-4595-9022-6c8d58351120-Strawberry-CheeseCake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\743180ff-3b71-4c88-8c0d-169328d3bebf-Toffee.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\743180ff-3b71-4c88-8c0d-169328d3bebf-Toffee.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\75180ce7-3044-480f-8604-febaf8eb2f10-Red-Velvet-Cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\75180ce7-3044-480f-8604-febaf8eb2f10-Red-Velvet-Cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\75d0edf1-453f-4f20-b9d3-015a7f431a6b-Oreo-Slurpy.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\75d0edf1-453f-4f20-b9d3-015a7f431a6b-Oreo-Slurpy.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\84838d5f-ca04-4bd7-8f58-c8055dff877e-Sponge-Cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\84838d5f-ca04-4bd7-8f58-c8055dff877e-Sponge-Cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\84f635ec-6ec4-41d9-8a8c-23e40aed7f43-Gingerbread-man.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\84f635ec-6ec4-41d9-8a8c-23e40aed7f43-Gingerbread-man.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\872b5fc0-7a2b-4cf8-bc39-833dfe72e98c-Oreo-Slurpy-2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\872b5fc0-7a2b-4cf8-bc39-833dfe72e98c-Oreo-Slurpy-2.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\8e9ef49a-50dc-4074-80fd-40163189eb9d-Red-Velvet-Cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\8e9ef49a-50dc-4074-80fd-40163189eb9d-Red-Velvet-Cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\8ef51a65-74d7-48b3-af8e-24c4cea3e774-Pumpkin-Pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\8ef51a65-74d7-48b3-af8e-24c4cea3e774-Pumpkin-Pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\8fc98e86-3c65-4c90-9d8c-1e97429cd57c-Carrot-Cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\8fc98e86-3c65-4c90-9d8c-1e97429cd57c-Carrot-Cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\92d70494-c132-4798-ad8a-74a8d4ac23b3-Shortbread-cookies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\92d70494-c132-4798-ad8a-74a8d4ac23b3-Shortbread-cookies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\93e9c789-cf70-43c8-91ee-adb994b770e2-Toffee-Rice-Pudding(2).jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\93e9c789-cf70-43c8-91ee-adb994b770e2-Toffee-Rice-Pudding(2).jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\9b3aa921-315c-493e-b549-c9d8f404cf98-Banana-Pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\9b3aa921-315c-493e-b549-c9d8f404cf98-Banana-Pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\a1b98557-903c-444a-9f50-e331e7bb3c5f-Chocolate-Pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\a1b98557-903c-444a-9f50-e331e7bb3c5f-Chocolate-Pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\add348d6-ebb1-4840-8f5d-a582ecf2d98b-Flan.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\add348d6-ebb1-4840-8f5d-a582ecf2d98b-Flan.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\afab2536-c508-4092-8c7a-58f442d07aac-Unicorn-Ice-Cream-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\afab2536-c508-4092-8c7a-58f442d07aac-Unicorn-Ice-Cream-1.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\b398f689-4a41-4e4d-bc68-d12530433a6c-Key-Lime-Pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\b398f689-4a41-4e4d-bc68-d12530433a6c-Key-Lime-Pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\b86a1291-ea9c-41f3-aba9-02e4ed3a8ab2-Peach-Pie.jfif",
+      "PackagePath": "staticwebassets\\Images\\Product\\b86a1291-ea9c-41f3-aba9-02e4ed3a8ab2-Peach-Pie.jfif"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\be4739a0-dd0c-430a-99d5-47b342ccb1bd-pistachio-nougat.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\be4739a0-dd0c-430a-99d5-47b342ccb1bd-pistachio-nougat.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\bebddfa7-0810-4403-bfc8-d9456cbf7350-Spritz-cookies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\bebddfa7-0810-4403-bfc8-d9456cbf7350-Spritz-cookies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\c2c7ee29-bbf0-42cd-bff9-e66909a1ab8f-Toffee-Rice-Pudding(2).jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\c2c7ee29-bbf0-42cd-bff9-e66909a1ab8f-Toffee-Rice-Pudding(2).jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\c677f298-6e4d-476b-b0f9-81bc46e2bb36-Toffee.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\c677f298-6e4d-476b-b0f9-81bc46e2bb36-Toffee.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\c6b824ed-0e87-4aeb-b6ec-1010045994cb-Ultimate-Icecream.webp",
+      "PackagePath": "staticwebassets\\Images\\Product\\c6b824ed-0e87-4aeb-b6ec-1010045994cb-Ultimate-Icecream.webp"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\c7b86431-bc2a-4a5b-82a9-2d6e485458cc-Pumpkin-Pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\c7b86431-bc2a-4a5b-82a9-2d6e485458cc-Pumpkin-Pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\c8d51e16-5b3d-4858-b606-fc36ce29c8fa-Blueberry-Sorbet.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\c8d51e16-5b3d-4858-b606-fc36ce29c8fa-Blueberry-Sorbet.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\d1e98070-2cab-4dd7-b2aa-45eb24c389ae-Mango-Pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\d1e98070-2cab-4dd7-b2aa-45eb24c389ae-Mango-Pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\d832566d-8f6f-4fb6-ad31-a23a72c08c60-Black-forest-cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\d832566d-8f6f-4fb6-ad31-a23a72c08c60-Black-forest-cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\df399dae-688b-4a0d-8bc2-947101cdda65-ChocolateChip-cookies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\df399dae-688b-4a0d-8bc2-947101cdda65-ChocolateChip-cookies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\e1c9e51f-d118-44ca-aa95-fac23eebbfbd-Chocolate-Pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\e1c9e51f-d118-44ca-aa95-fac23eebbfbd-Chocolate-Pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\e28ae29b-e428-4b1f-b3f3-1d193e35aea1-Apple-Pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\e28ae29b-e428-4b1f-b3f3-1d193e35aea1-Apple-Pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\e433f51f-898a-4591-a3b9-2b45894f820e-Gummies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\e433f51f-898a-4591-a3b9-2b45894f820e-Gummies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\e4ef7af6-9698-47de-a776-294dc165f83b-Chocolate-Madness-Sundaejpg.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\e4ef7af6-9698-47de-a776-294dc165f83b-Chocolate-Madness-Sundaejpg.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\e740ad39-bcec-43a4-acb7-e0929d8785bf-ChocolateChip-cookies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\e740ad39-bcec-43a4-acb7-e0929d8785bf-ChocolateChip-cookies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\e917cca0-19fc-4580-8dc9-6b8d8e4871ac-Vanilla-Ice-Cream.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\e917cca0-19fc-4580-8dc9-6b8d8e4871ac-Vanilla-Ice-Cream.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\ecc6a7d4-6a0b-4258-84dd-57add95f1827-Gingerbread-man.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\ecc6a7d4-6a0b-4258-84dd-57add95f1827-Gingerbread-man.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\ed5c2776-8640-4558-bfbd-afcdd7effee7-Spritz-cookies.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\ed5c2776-8640-4558-bfbd-afcdd7effee7-Spritz-cookies.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\ef3ee457-37a2-4260-b096-9156c7d169c8-Chocolate-Peanut-Butter-Bars.webp",
+      "PackagePath": "staticwebassets\\Images\\Product\\ef3ee457-37a2-4260-b096-9156c7d169c8-Chocolate-Peanut-Butter-Bars.webp"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\f09e5dbc-9d42-4061-9b55-c22c7c181a9a-Coconut-IceCream.png",
+      "PackagePath": "staticwebassets\\Images\\Product\\f09e5dbc-9d42-4061-9b55-c22c7c181a9a-Coconut-IceCream.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\f24a7094-67cf-408d-85ae-b55fc9aaa6b7-Apple-Pie.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\f24a7094-67cf-408d-85ae-b55fc9aaa6b7-Apple-Pie.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\f448ffe4-c33c-4db4-b204-f5a652836170-Unicorn-Ice-Cream-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\f448ffe4-c33c-4db4-b204-f5a652836170-Unicorn-Ice-Cream-1.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\f59124ac-452c-478b-9f00-11fd2320edd6-Pound-Cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\f59124ac-452c-478b-9f00-11fd2320edd6-Pound-Cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\f8149747-f1de-4a24-9459-0794e6710beb-Carrot-Cake.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\f8149747-f1de-4a24-9459-0794e6710beb-Carrot-Cake.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\Product\\fa214cfa-025e-4dab-8594-2443915b871d-Mango-Pudding.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\fa214cfa-025e-4dab-8594-2443915b871d-Mango-Pudding.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\ShoppingCart\\aluminium-packaging.jpg",
+      "PackagePath": "staticwebassets\\Images\\ShoppingCart\\aluminium-packaging.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\ShoppingCart\\cash.png",
+      "PackagePath": "staticwebassets\\Images\\ShoppingCart\\cash.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\ShoppingCart\\mastercard.png",
+      "PackagePath": "staticwebassets\\Images\\ShoppingCart\\mastercard.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\ShoppingCart\\paper-packaging.jpg",
+      "PackagePath": "staticwebassets\\Images\\ShoppingCart\\paper-packaging.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\ShoppingCart\\paypal.png",
+      "PackagePath": "staticwebassets\\Images\\ShoppingCart\\paypal.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\ShoppingCart\\plastic-packaging.jpg",
+      "PackagePath": "staticwebassets\\Images\\ShoppingCart\\plastic-packaging.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\ShoppingCart\\visa.jpg",
+      "PackagePath": "staticwebassets\\Images\\ShoppingCart\\visa.jpg"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\SignIn\\Google.png",
+      "PackagePath": "staticwebassets\\Images\\SignIn\\Google.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\SignIn\\Pie.png",
+      "PackagePath": "staticwebassets\\Images\\SignIn\\Pie.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\SignUp\\dessert-background.png",
+      "PackagePath": "staticwebassets\\Images\\SignUp\\dessert-background.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\SignUp\\sleepy.png",
+      "PackagePath": "staticwebassets\\Images\\SignUp\\sleepy.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\homepage1.css",
+      "PackagePath": "staticwebassets\\css\\homepage1.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\item123.css",
+      "PackagePath": "staticwebassets\\css\\item123.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\no-item-in-cart.css",
+      "PackagePath": "staticwebassets\\css\\no-item-in-cart.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\payment-complete.css",
+      "PackagePath": "staticwebassets\\css\\payment-complete.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\popup.css",
+      "PackagePath": "staticwebassets\\css\\popup.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\schedule-order.css",
+      "PackagePath": "staticwebassets\\css\\schedule-order.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\search-resultx42x2.css",
+      "PackagePath": "staticwebassets\\css\\search-resultx42x2.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\signin.css",
+      "PackagePath": "staticwebassets\\css\\signin.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\user-init-info2.css",
+      "PackagePath": "staticwebassets\\css\\user-init-info2.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\css\\userprofile.css",
+      "PackagePath": "staticwebassets\\css\\userprofile.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\js\\item1x.js",
+      "PackagePath": "staticwebassets\\js\\item1x.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\js\\popup1.js",
+      "PackagePath": "staticwebassets\\js\\popup1.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\js\\schedule-order.js",
+      "PackagePath": "staticwebassets\\js\\schedule-order.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\js\\search-result21.js",
+      "PackagePath": "staticwebassets\\js\\search-result21.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\MVC_App\\FoodOrder\\FoodOrder\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FoodOrder.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.FoodOrder.props",
+      "PackagePath": "build\\FoodOrder.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.FoodOrder.props",
+      "PackagePath": "buildMultiTargeting\\FoodOrder.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.FoodOrder.props",
+      "PackagePath": "buildTransitive\\FoodOrder.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,361 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model FoodOrder.ViewModels.HomePageViewModel
+@inject ApplicationDbContext _context
+@inject UserManager<ApplicationUser> _userManager;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="~/css/homepage1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c2ac5cb392.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+
+    @if ((bool) ViewData["ShowOrderNotification"])
+    {
+        <div>
+            @Html.Partial("_OrderNotification.cshtml")
+        </div>
+    }
+
+    @if ((bool)ViewData["ShowConfirmOrder"])
+    {
+        <div>
+            @Html.Partial("_OrderConfirm.cshtml")
+        </div>
+
+        var user = await _userManager.GetUserAsync(HttpContextAccessor.HttpContext.User);
+        var userId = user.Id;
+
+        var Order = _context.OrderHeaders.Where(p => p.ApplicationUserId == userId)
+                                    .Where(p => p.ConfirmByAdmin == "CONFIRM")
+                                    .Where(p => p.FinishPopup == false).FirstOrDefault();
+
+        Order.FinishPopup = true;
+        _context.OrderHeaders.Update(Order);
+        await _context.SaveChangesAsync();
+    }
+
+    <div class="top-nav">
+      <div class="top-nav-left">
+        <div>
+          <img
+            src="~/Images/SignUp/sleepy.png"
+            alt=""
+            style="
+              margin-left: 1.75rem;
+              width: 250px;
+              height: 250px;
+              display: inline-block;
+            "
+          />
+        </div>
+
+        <div class="heading">Sweet Trip</div>
+      </div>
+      <div style="width: 20%"></div>
+        <form action="@Url.Action("SearchBar", "Home")" method="get" id="my-form">
+
+           
+                <input type="text"
+                       class="search-box"
+                       name="stringResult"
+                       placeholder="Enter the dessert you want to order" />
+                <button type="submit"
+                        id="search-button">
+                    <i class="fa fa-search"
+                       style="font-size: 1.5rem; font-weight: 600"></i>
+                </button>
+         
+            
+
+            <button asp-action="Index" asp-controller="Cart"
+                    class="cart-button"
+                    style="border: none; background-color: transparent; padding: none; ">
+                <img src="~/Images/HomePage/cart.png"
+                     alt=""
+                     style="
+            width: 3rem;
+            height: 3rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+          " />
+                @if ((bool)ViewData["ShowTempOrder"])
+                {
+                    @await Component.InvokeAsync("Item");
+                }
+
+          </button>
+
+            <button asp-action="Index" asp-controller="Profile" class="avatar-button"
+                    style="border: none; background-color: transparent; padding: none">
+                    <img
+                        src="@Model.ImageUrl"
+                        alt=""
+                        width="48" height="48"
+                        style="border: 3px solid blue; border-radius: 16px"
+                        />
+            </button>
+ 
+      </form>
+    </div>
+    <div class="body-wrapper">
+      <div
+        class="intro"
+        style="
+          font-size: 3.25rem;
+          font-style: normal;
+          color: #202020;
+          transform: translateY(-6rem);
+          display: flex;
+        "
+      >
+        <div class="intro-left" style="max-width: 50%">
+          Premium <span style="color: #a5516f">quality</span>
+          <div>
+            Dessert for your
+            <img src="/Images/HomePage/icecream.png" alt="" style="vertical-align: middle" />
+            <span style="color: #a5516f">healthy</span>
+          </div>
+          <div>
+            <img src="/Images/HomePage/cupcake.png" alt="" style="vertical-align: middle" />
+            <span style="color: #a5516f">& Daily Life</span>
+          </div>
+          <form action="" id="delivery-location">
+            <input type="text" placeholder="Enter your delivery location" />
+            <button id="get-started-button">
+              <span style="font-size: 0.75rem">Get Started</span>
+            </button>
+          </form>
+          <span style="font-size: 1rem; color: #404040"
+            >Popular cities in Vietnam</span
+          >
+          <div>
+            <span style="font-size: 1rem; color: #a5516f">TP HCM</span>
+            <span style="font-size: 1rem; color: #404040; padding: 1rem"
+              >Ha Noi</span
+            >
+            <span style="font-size: 1rem; color: #a5516f">Da Nang</span>
+            <span style="font-size: 1rem; color: #404040; padding: 1rem"
+              >Can Tho</span
+            >
+            <span style="font-size: 1rem; color: #a5516f">Hue</span>
+            <span style="font-size: 1rem; color: #404040; padding: 1rem"
+              >Nha Trang</span
+            >
+          </div>
+        </div>
+        <div
+          class="intro-right"
+          style="max-width: 50%; margin-top: 4rem; margin-left: 5rem"
+        >
+          <div
+            id="img-wrap"
+            style="display: flex; flex-direction: row; align-items: center"
+          >
+            <div class="intro-img-container">
+              <img
+                src="~/Images/HomePage/introimage.jpg"
+                alt=""
+                style="width: 400px; height: 600px"
+                class="intro-image"
+              />
+            </div>
+            <div class="intro-img-container">
+              <img
+                src="~/Images/HomePage/introimage2.jpg"
+                alt=""
+                class="intro-image"
+                style="width: 300px; height: 450px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="~/Images/HomePage/christmas-wreith.png"
+        alt=""
+        style="
+          width: 16rem;
+          height: 15rem;
+          position: absolute;
+          transform: translate(5rem, -14rem);
+        "
+      />
+      <div class="recommend-wrapper">
+        <span style="font-weight: lighter; font-size: 2rem; color: #202020"
+          >Recommended Dessert Items
+        </span>
+
+            @for (int i = 0; i < @Model.item; i++)
+            {
+                <div class="recommend-row" style="padding-top: 2rem">
+                    @for (int j = 4 * i; j <= 4 * (i + 1) - 1; j++)
+                    {
+
+                        var Product = Model.Products[j];
+
+                        <div class="recommend-box">
+                            <a asp-action="Index" asp-controller="Product" asp-route-id="@Product.Id">
+                                <div>
+                                    <img src="@Product.Image"
+                                 alt=""
+                                 class="recommend-box-image" />
+                                </div>
+                                <div style="padding-top: 1rem">
+                                    <span class="recommend-title">@Product.Name</span>
+                                    <div class="recommend-description">
+                                        @Product.Description
+                                    </div>
+
+
+                                    <div class="recommend-detail">
+                                        <div style="float: left">
+                                            <img src="~/Images/HomePage/price-tag.png" alt="" class="tag" />
+                                            <span class="recommend-info">@Product.Price VND</span>
+                                        </div>
+                                        <div style="float: right">
+                                            <img src="~/Images/HomePage/deliver-tag.png" alt="" class="tag" />
+                                            <span class="recommend-info">@Product.DeliverMinutes Mins</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a asp-action = "OrderNow" asp-controller="Product" asp-route-Productid = "@Product.Id">
+                                <div style="padding-top: 2.5rem; padding-right: 1rem">
+                                    <button type="button"
+                                    class="adding-button"
+                                    style="float: right; border: none; background: none">
+                                        <img src="~/Images/HomePage/adding-button.png" alt="" />
+                                </button>
+                                </div>
+                            </a>
+                            
+                        </div>
+
+                    }
+                </div>
+                
+            }
+        </div>
+
+      <div style="margin-right: 3rem; float: right; margin-bottom: -4rem">
+        <img src="~/Images/HomePage/break-reindeers.png" alt="" id="reindeer-deco" />
+      </div>
+      <div
+        id="break"
+        style="
+          height: 200px;
+          background-color: #664330;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div style="margin: 0 auto">
+          <form action="" id="item-search">
+            <span style="color: white; font-size: 1.25rem; font-weight: 300">
+              Search By Category
+            </span>
+            <i
+              class="fa fa-random"
+              aria-hidden="true"
+              style="
+                color: white;
+                padding-left: 2rem;
+                padding-right: 1.5rem;
+                font-size: 1.25rem;
+              "
+            ></i>
+            <input
+              type="text"
+              placeholder="Enter item or restaurant you are looking for"
+              style="color: #ffffff; opacity: 50%"
+            />
+            <button class="adding-button">
+              <span style="font-size: 0.75rem">Search Now</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 3rem;
+        ">
+        <span style="font-size: 1.5rem; color: #202020">What's on your mind?</span>
+
+        <div
+          class="category"
+          style="margin-top: 2rem; display: flex; justify-content: center">
+          @for (int i = 0; i < Model.Categories.Count; i++)
+            {
+                if (i < 6)
+                    {
+                       var Category = Model.Categories[i];
+                       <div class="category-container">
+                           <a href="@Url.Action("CategoryList", "Home", new {Categoryinp = Category.Title})">
+                                 <img src="@Category.ImageUrl" alt="" class="category-img" />
+                           </a>
+                           <p>@Category.Title</p>
+                       </div>
+                    }
+                
+             }
+                    
+          
+        </div>
+        
+        
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="footer-row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div class="row" style="color: white">
+          Sweet Trip Copyright © 2022 - All rights reserved
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
